@@ -1,9 +1,11 @@
 #pragma once
 #include <iostream>
+#include"Scene.h"
 
-class TitleScene
+class TitleScene:public Scene
 {
 public:
-	
+	void runScene()override;
+	void PrintScene()override;
 };
 

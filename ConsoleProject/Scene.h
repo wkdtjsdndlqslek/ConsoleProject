@@ -9,7 +9,7 @@ private:
 public:
 	Scene(std::string sn, std::string sd);
 public:
-	void runScene();
-	void PrintScene();
+	virtual void runScene()=0;
+	virtual void PrintScene()=0;
 };
 

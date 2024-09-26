@@ -9,6 +9,6 @@ public:
 public:
 	void equippedItem();
 	void UnEquippedItem();
-
+	void EarnMoney();
 };
 

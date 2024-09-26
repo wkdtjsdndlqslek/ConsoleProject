@@ -9,5 +9,9 @@ protected:
 public:
 	Item(std::string in, int ia, int p);
 	~Item();
+public:
+	std::string GetItemName();
+	int GetItemAtt();
+	int GetPrice();
 };
 
