@@ -121,7 +121,7 @@
     - `draw()`: 카드 드로우
     - `chooseTrashCards()`: 카드 버림
     - `evaluateHand()`: 핸드 평가 및 족보 결정
-    - `BubbleSort()`: 카드 정렬 후 스트레이트 판별
+    - `CardSort()`: 카드 정렬 후 스트레이트 판별
     
     ---
     
