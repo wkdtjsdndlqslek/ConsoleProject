@@ -6,7 +6,7 @@
 
 ## Flow chart
 
-![FlowChart.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/68a29e8f-e221-4ae6-8efa-8574f019ed4c/aece1e30-6e7e-41f1-b054-3304741a58f8/FlowChart.png)
+![FlowChart](https://github.com/user-attachments/assets/a4fa23df-95d3-4577-8460-94c00624e708)
 
 ---
 
