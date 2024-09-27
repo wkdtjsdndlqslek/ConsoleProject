@@ -299,6 +299,51 @@ void Poker::chooseTrashCards(int u, Poker c[])
 	}
 }
 
+std::string Poker::ifCardIsRoyal(int h)
+{
+	std::string royal;
+	if (h == 1)
+	{
+		royal = "A";
+	}
+	else if (h == 11)
+	{
+		royal = "J";
+	}
+	else if (h == 12)
+	{
+		royal = "Q";
+	}
+	else if (h == 13)
+	{
+		royal = "K";
+	}
+	return royal;
+}
+std::string Poker::ifCardIsRoyal(int n[])
+{
+	std::string royal;
+	if ( n[0] == 1)
+	{
+		royal = "A";
+	}
+	else if (n[4] == 11)
+	{
+		royal = "J";
+	}
+	else if (n[4] == 12)
+	{
+		royal = "Q";
+	}
+	else if (n[4] == 13)
+	{
+		royal = "K";
+	}
+	return royal;
+}
+
+
+
 void Poker::CheckPair(int n[], std::string s[],int cphp[])
 {
 	int checkPair = 0;
@@ -317,6 +362,10 @@ void Poker::CheckPair(int n[], std::string s[],int cphp[])
 		if (checkPair == 3)
 		{
 			triple = n[i];
+		}
+		if (n[0] == n[1] && n[0] == 1)
+		{
+			highPair = 1;
 		}
 	}
 	cphp[0] = checkPair;
@@ -350,29 +399,65 @@ void Poker::checkNumRanking(int n[], std::string s[])
 	int checkPairHighPair[3];//CheckPair의 리턴 값을 세 개 받아오기 위해 만든 배열
 	CheckPair(n,s,checkPairHighPair);
 	int CP = checkPairHighPair[0];
-	int HP = checkPairHighPair[1];//HP는 페어 중 높은 숫자 
+	int HP = checkPairHighPair[1];//HP는 페어 중 높은 숫자
+	
 	int triple = checkPairHighPair[2];//triple은 풀하우스가 떴을 때 더 높은 숫자의 페어가 아닌 트리플의 숫자를 가져오기 위함.
 	if (CP == 4)//플러쉬 보다 우선 순위
 	{
-		std::cout <<triple<< " FULL HOUSE입니다." << std::endl;
+		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+		{
+			std::cout << ifCardIsRoyal(HP) << " FULL HOUSE입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << triple << " FULL HOUSE입니다." << std::endl;
+		}
 	}
 	else if (CP == 6)//플러쉬 보다 우선 순위
 	{
-		std::cout << HP << " FOUR CARD입니다." << std::endl;
+		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+		{
+			std::cout << ifCardIsRoyal(HP) << " FOUR CARD입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << HP << " FOUR CARD입니다." << std::endl;
+		}
 	}
 	else if (CP ==0)
 	{	int CTSF = CheckTopStrateFlush(n, s);
 		if (CTSF == 1)
 		{
-			std::cout << n[4]<<" FLUSH입니다." << std::endl;
+			if (n[1] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+			{
+				std::cout << ifCardIsRoyal(n) << " FLUSH입니다." << std::endl;
+			}
+			else
+			{
+				std::cout << n[4] << " FLUSH입니다." << std::endl;
+			}
 		}
 		else if (CTSF == 2)
 		{
-			std::cout << n[4] <<" STRATE입니다." << std::endl;
+			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+			{
+				std::cout << ifCardIsRoyal(n) << " STRATE입니다." << std::endl;
+			}
+			else
+			{
+				std::cout << n[4] << " STRATE입니다." << std::endl;
+			}
 		}
 		else if (CTSF == 3)
 		{
-			std::cout << n[4] << " STRATE FLUSH입니다." << std::endl;
+			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+			{
+				std::cout << ifCardIsRoyal(n) << " STRATE FLUSH입니다." << std::endl;
+			}
+			else
+			{
+				std::cout << n[4] << " STRATE FLUSH입니다." << std::endl;
+			}
 		}
 		else if (CTSF == 11)
 		{
@@ -380,20 +465,48 @@ void Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << n[4] << " TOP입니다." << std::endl;
+			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+			{
+				std::cout << ifCardIsRoyal(n) << " TOP입니다." << std::endl;
+			}
+			else
+			{
+				std::cout << n[4] << " TOP입니다." << std::endl;
+			}
 		}
 	}
 	else if (CP == 1)
 	{
-		std::cout << HP<< " ONE PAIR입니다." << std::endl;
+		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+		{
+			std::cout << ifCardIsRoyal(HP) << " ONE PAIR입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << HP << " ONE PAIR입니다." << std::endl;
+		}
 	}
 	else if (CP == 2)
 	{
-		std::cout << HP << " TWO PAIR입니다." << std::endl;
+		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+		{
+			std::cout << ifCardIsRoyal(HP) << " TWO PAIR입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << HP << " TWO PAIR입니다." << std::endl;
+		}
 	}
 	else if (CP == 3)
 	{
-		std::cout << HP << " TRIPLE입니다." << std::endl;
+		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+		{
+			std::cout << ifCardIsRoyal(HP) << " TRIPLE입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << HP << " TRIPLE입니다." << std::endl;
+		}
 	}
 	
 	

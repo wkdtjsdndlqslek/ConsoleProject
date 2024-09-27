@@ -43,6 +43,10 @@ public:
 	////버릴 카드 뽑기
 	void chooseTrashCards(int u, Poker c[]);
 	
+	//페어의 높은 숫자가 로열이라면
+	std::string ifCardIsRoyal(int h);
+	std::string ifCardIsRoyal(int n[]);
+
 	//카드 출력 (함수 오버로딩)
 	void PrintCard(int n[],std::string s[],int i);
 	void PrintCard(Poker c[], int num);
