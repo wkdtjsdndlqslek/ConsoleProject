@@ -1,6 +1,6 @@
 #include "TitleScene.h"
 
-void TitleScene::runScene()
+int TitleScene::runScene()
 {
 	while (1)
 	{

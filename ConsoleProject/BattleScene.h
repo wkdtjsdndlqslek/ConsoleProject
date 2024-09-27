@@ -1,5 +1,8 @@
 #pragma once
-class BattleScene
+#include<iostream>
+#include"Scene.h"
+class BattleScene:public Scene
 {
+	int runScene()override;
 };
 

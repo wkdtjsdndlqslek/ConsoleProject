@@ -4,7 +4,7 @@
 class LobbyScene: public Scene
 {
 public:
-	void runScene()override;
+	int runScene()override;
 	void PrintScene()override;
 };
 

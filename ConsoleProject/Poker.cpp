@@ -63,6 +63,7 @@ int Poker::GetNumber()
 
 void Poker::draw(int n, Poker c[], int& u)
 {
+	std::cout << n << "장 드로우" << std::endl;
 	for (int i = 0; i < n; i++)
 	{
 		c[53 + i + u].SetNumber(c[i + u].GetNumber());
@@ -152,7 +153,7 @@ void Poker::cardSetting(Poker c[])
 	}
 }
 
-void PrintCard(Poker c[], int num)
+void Poker::PrintCard(Poker c[], int num)
 {
 	if (c[num].GetNumber() == 1)
 	{
@@ -221,6 +222,98 @@ void Poker::chooseTrashCards(int u, Poker c[])
 	}
 }
 
+void Poker::finalCards(Poker c[])
+{
+	std::cout << "최종 카드" << std::endl;
+	for (int i = 0; i < 6; i++)
+	{
+		if (c[53 + i].GetNumber() == 0)
+		{
+		}
+		else
+		{
+			PrintCard(c, 53+i);
+			std::cout << "	";
+		}
+		
+	}
+}
+
+void Poker::checkNumRanking(int n[])
+{
+	int sameNum = 0;
+	for (int i = 0; i < 5; i++)//비교하는 첫번째 수
+	{
+		int tripleCheck = 0;
+		for (int k = 4; k > 0; k--)//비교하는 두번째 수
+		{
+			if (n[i] == n[k])
+			{
+				sameNum++;
+				tripleCheck++;
+			}
+		}
+		if (tripleCheck == 2)
+		{
+			sameNum++;
+		}
+	}
+	
+	if (sameNum == 1)
+	{
+		std::cout << "당신의 카드는 ONE PAIR입니다." << std::endl;
+	}
+	else if (sameNum == 2)
+	{
+		std::cout << "당신의 카드는 TWO PAIR입니다." << std::endl;
+	}
+	else if (sameNum == 3)
+	{
+		std::cout << "당신의 카드는 TRIPLE입니다." << std::endl;
+	}
+	else if (sameNum == 4)
+	{
+		std::cout << "당신의 카드는 FOUR CARD입니다." << std::endl;
+	}
+	else if (sameNum == 5)
+	{
+		std::cout << "당신의 카드는 FULL HOUSE입니다." << std::endl;
+	}
+	else
+	{
+		std::cout << "당신의 카드는 TOP입니다." << std::endl;
+	}
+}
+
+void Poker::evaluate(Poker c[])
+{
+	int num[5];
+	std::string shape[5];
+	for (int i = 0; i < 5; i++)
+	{
+		if (c[53 + i].GetNumber()!=0)
+		{
+			num[i] = c[53 + i].GetNumber();
+		}
+		else if (c[53 + i].GetNumber() == 0)
+		{
+			num[i] = c[58].GetNumber();
+		}
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		if (c[53 + i].GetNumber() != 0)
+		{
+			shape[i] = c[53 + i].GetShape();
+		}
+		else if (c[53 + i].GetNumber() == 0)
+		{
+			shape[i] = c[58].GetShape();
+		}
+	}
+	checkNumRanking(num);
+}
+
 void Poker::playPoker()
 {
 	Poker cards[60];
@@ -231,4 +324,8 @@ void Poker::playPoker()
 	draw(4, cards, usecard);
 	chooseTrashCards(usecard, cards);
 	draw(2, cards, usecard);
+	finalCards(cards);
+	evaluate(cards);
 }
+
+
