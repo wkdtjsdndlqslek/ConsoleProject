@@ -61,6 +61,28 @@ int Poker::GetNumber()
 	return Number;
 }
 
+void Poker::CardSort(int n[],std::string s[])
+{
+	
+	for (int i = 0; i < 5; i++)//비교하는 첫번째 수
+	{
+		for (int k = 4; k > i; k--)//비교하는 두번째 수
+		{
+			if (n[i] > n[k])
+			{
+				int temp;
+				temp = n[i];
+				n[i] = n[k];
+				n[k] = temp;
+				std::string shapeTemp;
+				shapeTemp = s[i];
+				s[i] = s[k];
+				s[k] = shapeTemp; 
+			}
+		}
+	}
+}
+
 void Poker::draw(int n, Poker c[], int& u)
 {
 	std::cout << n << "장 드로우" << std::endl;
@@ -91,6 +113,37 @@ void Poker::draw(int n, Poker c[], int& u)
 		std::cout << "	";
 	}
 	std::cout << std::endl;
+	u += n;
+}
+
+void Poker::MonsterDraw(int n, Poker c[], int& u)
+{
+	for (int i = 0; i < n; i++)
+	{
+		c[53 + i + u].SetNumber(c[i + u].GetNumber());
+		c[53 + i + u].SetShape(c[i + u].GetshapeNumber());
+		if (c[i + u].GetNumber() == 1)
+		{
+			std::cout << c[i + u].GetShape() << "A";
+		}
+		else if (c[i + u].GetNumber() == 11)
+		{
+			std::cout << c[i + u].GetShape() << "J";
+		}
+		else if (c[i + u].GetNumber() == 12)
+		{
+			std::cout << c[i + u].GetShape() << "Q";
+		}
+		else if (c[i + u].GetNumber() == 13)
+		{
+			std::cout << c[i + u].GetShape() << "K";
+		}
+		else
+		{
+			std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
+		}
+		std::cout << "	";
+	}
 	u += n;
 }
 
@@ -150,6 +203,30 @@ void Poker::cardSetting(Poker c[])
 	{
 		c[i].SetShape(c[i].GetshapeNumber());
 		c[i].SetNumber(c[i].GetshapeNumber());
+	}
+}
+
+void Poker::PrintCard(int n[],std::string s[],int i)
+{
+	if (n[i] == 1)
+	{
+		std::cout << s[i] << "A";
+	}
+	else if (n[i] == 11)
+	{
+		std::cout << s[i] << "J";
+	}
+	else if (n[i] == 12)
+	{
+		std::cout << s[i] << "Q";
+	}
+	else if (n[i] == 13)
+	{
+		std::cout << s[i] << "K";
+	}
+	else
+	{
+		std::cout << s[i] << n[i];
 	}
 }
 
@@ -222,110 +299,193 @@ void Poker::chooseTrashCards(int u, Poker c[])
 	}
 }
 
-void Poker::finalCards(Poker c[])
+void Poker::CheckPair(int n[], std::string s[],int cphp[])
 {
-	std::cout << "최종 카드" << std::endl;
-	for (int i = 0; i < 6; i++)
-	{
-		if (c[53 + i].GetNumber() == 0)
-		{
-		}
-		else
-		{
-			PrintCard(c, 53+i);
-			std::cout << "	";
-		}
-		
-	}
-}
-
-void Poker::checkNumRanking(int n[])
-{
-	int sameNum = 0;
+	int checkPair = 0;
+	int highPair=0;
+	int triple = 0;
 	for (int i = 0; i < 5; i++)//비교하는 첫번째 수
 	{
-		int tripleCheck = 0;
-		for (int k = 4; k > 0; k--)//비교하는 두번째 수
+		for (int k = 4; k > i; k--)//비교하는 두번째 수
 		{
 			if (n[i] == n[k])
 			{
-				sameNum++;
-				tripleCheck++;
+				checkPair++;
+				highPair = n[i];
 			}
 		}
-		if (tripleCheck == 2)
+		if (checkPair == 3)
 		{
-			sameNum++;
+			triple = n[i];
 		}
 	}
-	
-	if (sameNum == 1)
-	{
-		std::cout << "당신의 카드는 ONE PAIR입니다." << std::endl;
-	}
-	else if (sameNum == 2)
-	{
-		std::cout << "당신의 카드는 TWO PAIR입니다." << std::endl;
-	}
-	else if (sameNum == 3)
-	{
-		std::cout << "당신의 카드는 TRIPLE입니다." << std::endl;
-	}
-	else if (sameNum == 4)
-	{
-		std::cout << "당신의 카드는 FOUR CARD입니다." << std::endl;
-	}
-	else if (sameNum == 5)
-	{
-		std::cout << "당신의 카드는 FULL HOUSE입니다." << std::endl;
-	}
-	else
-	{
-		std::cout << "당신의 카드는 TOP입니다." << std::endl;
-	}
+	cphp[0] = checkPair;
+	cphp[1] = highPair;
+	cphp[2] = triple;
 }
 
-void Poker::evaluate(Poker c[])
+int Poker::CheckTopStrateFlush(int n[],std::string s[])
 {
-	int num[5];
-	std::string shape[5];
+	int checkTopStrateFlush = 0;
+	//플러쉬 확인
+	if (s[0] == s[1] && s[1] == s[2] && s[2] == s[3] && s[3] == s[4])
+	{
+		checkTopStrateFlush++;
+	}
+	//스트레이트 확인
+	if (n[4] == n[3] + 1 && n[3] == n[2] + 1 && n[2] == n[1] + 1 && n[1] == n[0] + 1)
+	{
+		checkTopStrateFlush += 2;
+	}
+	//로열 스트레이트 확인
+	if (n[0] == 1 && n[1] == 10 && n[2] == 11 && n[3] == 12 && n[4] == 13)
+	{
+		checkTopStrateFlush += 10;
+	}
+	return checkTopStrateFlush;
+}
+
+void Poker::checkNumRanking(int n[], std::string s[])
+{
+	int checkPairHighPair[3];//CheckPair의 리턴 값을 세 개 받아오기 위해 만든 배열
+	CheckPair(n,s,checkPairHighPair);
+	int CP = checkPairHighPair[0];
+	int HP = checkPairHighPair[1];//HP는 페어 중 높은 숫자 
+	int triple = checkPairHighPair[2];//triple은 풀하우스가 떴을 때 더 높은 숫자의 페어가 아닌 트리플의 숫자를 가져오기 위함.
+	if (CP == 4)//플러쉬 보다 우선 순위
+	{
+		std::cout <<triple<< " FULL HOUSE입니다." << std::endl;
+	}
+	else if (CP == 6)//플러쉬 보다 우선 순위
+	{
+		std::cout << HP << " FOUR CARD입니다." << std::endl;
+	}
+	else if (CP ==0)
+	{	int CTSF = CheckTopStrateFlush(n, s);
+		if (CTSF == 1)
+		{
+			std::cout << n[4]<<" FLUSH입니다." << std::endl;
+		}
+		else if (CTSF == 2)
+		{
+			std::cout << n[4] <<" STRATE입니다." << std::endl;
+		}
+		else if (CTSF == 3)
+		{
+			std::cout << n[4] << " STRATE FLUSH입니다." << std::endl;
+		}
+		else if (CTSF == 11)
+		{
+			std::cout << " ROYAL STRATE FLUSH입니다." << std::endl;
+		}
+		else
+		{
+			std::cout << n[4] << " TOP입니다." << std::endl;
+		}
+	}
+	else if (CP == 1)
+	{
+		std::cout << HP<< " ONE PAIR입니다." << std::endl;
+	}
+	else if (CP == 2)
+	{
+		std::cout << HP << " TWO PAIR입니다." << std::endl;
+	}
+	else if (CP == 3)
+	{
+		std::cout << HP << " TRIPLE입니다." << std::endl;
+	}
+	
+	
+	
+}
+
+void Poker::evaluate(Poker c[],int u)
+{
+	std::cout << "몬스터의 카드" << std::endl;
+	MonsterDraw(5, c, u);
+	int playernum[5];
+	std::string playershape[5];
 	for (int i = 0; i < 5; i++)
 	{
 		if (c[53 + i].GetNumber()!=0)
 		{
-			num[i] = c[53 + i].GetNumber();
+			playernum[i] = c[53 + i].GetNumber();
 		}
 		else if (c[53 + i].GetNumber() == 0)
 		{
-			num[i] = c[58].GetNumber();
+			playernum[i] = c[58].GetNumber();
 		}
 	}
 	for (int i = 0; i < 5; i++)
 	{
 		if (c[53 + i].GetNumber() != 0)
 		{
-			shape[i] = c[53 + i].GetShape();
+			playershape[i] = c[53 + i].GetShape();
 		}
 		else if (c[53 + i].GetNumber() == 0)
 		{
-			shape[i] = c[58].GetShape();
+			playershape[i] = c[58].GetShape();
 		}
 	}
-	checkNumRanking(num);
+	int Monsternum[5];
+	std::string Monstershape[5];
+	for (int i = 0; i < 5; i++)
+	{
+		if (c[59 + i].GetNumber() != 0)
+		{
+			Monsternum[i] = c[59 + i].GetNumber();
+		}
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		if (c[59 + i].GetNumber() != 0)
+		{
+			Monstershape[i] = c[59 + i].GetShape();
+		}
+	}
+
+	CardSort(playernum, playershape);
+	CardSort(Monsternum, Monstershape);
+	std::cout << "몬스터는 ";
+	checkNumRanking(Monsternum, Monstershape);
+	finalCards(playernum, playershape);
+	std::cout << "당신은 ";
+	checkNumRanking(playernum, playershape);
+	
 }
+
+void Poker::finalCards(int n[],std::string s[])
+{
+	std::cout << "최종 카드" << std::endl;
+	for (int i = 0; i < 5; i++)
+	{
+		if (n[i] == 0)
+		{
+		}
+		else
+		{
+			PrintCard(n,s,i);
+			std::cout << "	";
+		}
+
+	}
+}
+
 
 void Poker::playPoker()
 {
-	Poker cards[60];
+	Poker cards[64];
 	cardSetting(cards);
 
 	//인게임, 카드 뽑기
 	int usecard = 0;
 	draw(4, cards, usecard);
+	std::cout<<std::endl;
 	chooseTrashCards(usecard, cards);
 	draw(2, cards, usecard);
-	finalCards(cards);
-	evaluate(cards);
+	std::cout << std::endl;
+	evaluate(cards, usecard);
 }
 
 
