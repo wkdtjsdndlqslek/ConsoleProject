@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -51,8 +19,60 @@
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -71,28 +91,12 @@
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:DungeonScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:BattleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,148 +106,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "StoreScene.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.h",
+              "RelativeDocumentMoniker": "StoreScene.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.h",
+              "RelativeToolTip": "StoreScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T11:45:39.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Item.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.cpp",
               "RelativeDocumentMoniker": "Item.cpp",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.cpp",
               "RelativeToolTip": "Item.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-27T10:22:41.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Poker.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.cpp",
               "RelativeDocumentMoniker": "Poker.cpp",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.cpp",
               "RelativeToolTip": "Poker.cpp",
-              "ViewState": "AgIAADEBAAAAAAAAAAAmwEEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-27T00:31:29.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InventoryScene.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
-              "RelativeDocumentMoniker": "InventoryScene.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
-              "RelativeToolTip": "InventoryScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:30.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DungeonScene.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
-              "RelativeDocumentMoniker": "DungeonScene.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
-              "RelativeToolTip": "DungeonScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:31.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DungeonScene.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
-              "RelativeDocumentMoniker": "DungeonScene.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
-              "RelativeToolTip": "DungeonScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T00:26:04.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BattleScene.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
-              "RelativeDocumentMoniker": "BattleScene.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
-              "RelativeToolTip": "BattleScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T00:26:05.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Poker.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
-              "RelativeDocumentMoniker": "Poker.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
-              "RelativeToolTip": "Poker.h",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAIwC8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:40.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BattleScene.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
-              "RelativeDocumentMoniker": "BattleScene.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
-              "RelativeToolTip": "BattleScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:31.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Monster.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.h",
-              "RelativeDocumentMoniker": "Monster.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.h",
-              "RelativeToolTip": "Monster.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:32.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T00:42:16.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "Scene.h",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.h",
               "RelativeDocumentMoniker": "Scene.h",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.h",
               "RelativeToolTip": "Scene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:28.839Z"
+              "WhenOpened": "2024-09-27T00:19:28.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "TitleScene.h",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.h",
               "RelativeDocumentMoniker": "TitleScene.h",
@@ -256,45 +175,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Item.h",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.h",
               "RelativeDocumentMoniker": "Item.h",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Item.h",
               "RelativeToolTip": "Item.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-27T00:19:41.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-27T00:19:33.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InventoryScene.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
-              "RelativeDocumentMoniker": "InventoryScene.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
-              "RelativeToolTip": "InventoryScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StoreScene.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
+              "RelativeDocumentMoniker": "StoreScene.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
+              "RelativeToolTip": "StoreScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T00:19:26.371Z"
+              "WhenOpened": "2024-09-27T06:10:34.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "TitleScene.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp",
               "RelativeDocumentMoniker": "TitleScene.cpp",
@@ -307,31 +227,169 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "LobbyScene.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
               "RelativeDocumentMoniker": "LobbyScene.cpp",
               "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
               "RelativeToolTip": "LobbyScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T00:19:02.61Z"
+              "WhenOpened": "2024-09-27T00:19:02.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StoreScene.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
-              "RelativeDocumentMoniker": "StoreScene.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
-              "RelativeToolTip": "StoreScene.cpp",
+              "DocumentIndex": 7,
+              "Title": "LobbyScene.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
+              "RelativeDocumentMoniker": "LobbyScene.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
+              "RelativeToolTip": "LobbyScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:29.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryScene.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
+              "RelativeDocumentMoniker": "InventoryScene.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
+              "RelativeToolTip": "InventoryScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T00:19:26.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryScene.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
+              "RelativeDocumentMoniker": "InventoryScene.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
+              "RelativeToolTip": "InventoryScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:30.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T05:41:56.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BattleScene.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
+              "RelativeDocumentMoniker": "BattleScene.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
+              "RelativeToolTip": "BattleScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T00:26:05.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T00:42:16.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Monster.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.h",
+              "RelativeDocumentMoniker": "Monster.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.h",
+              "RelativeToolTip": "Monster.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:32.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Unit.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h",
+              "RelativeDocumentMoniker": "Unit.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h",
+              "RelativeToolTip": "Unit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:35.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BattleScene.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
+              "RelativeDocumentMoniker": "BattleScene.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
+              "RelativeToolTip": "BattleScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:31.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Poker.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
+              "RelativeDocumentMoniker": "Poker.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
+              "RelativeToolTip": "Poker.h",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwC8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:40.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DungeonScene.cpp",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
+              "RelativeDocumentMoniker": "DungeonScene.cpp",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
+              "RelativeToolTip": "DungeonScene.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T06:10:34.047Z"
+              "WhenOpened": "2024-09-27T00:26:04.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
+              "Title": "DungeonScene.h",
+              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
+              "RelativeDocumentMoniker": "DungeonScene.h",
+              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
+              "RelativeToolTip": "DungeonScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-27T00:19:31.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Monster.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Monster.cpp",
               "RelativeDocumentMoniker": "Monster.cpp",
@@ -343,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Scene.cpp",
               "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Scene.cpp",
               "RelativeDocumentMoniker": "Scene.cpp",
@@ -352,42 +410,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-27T00:19:25.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp",
-              "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Player.cpp",
-              "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-27T05:41:56.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Unit.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h",
-              "RelativeDocumentMoniker": "Unit.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\Unit.h",
-              "RelativeToolTip": "Unit.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:35.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LobbyScene.h",
-              "DocumentMoniker": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
-              "RelativeDocumentMoniker": "LobbyScene.h",
-              "ToolTip": "C:\\Users\\KGA\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
-              "RelativeToolTip": "LobbyScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-27T00:19:29.573Z"
             }
           ]
         }

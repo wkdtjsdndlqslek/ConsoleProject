@@ -1,6 +1,6 @@
 #include "LobbyScene.h"
 
-int LobbyScene::runScene()
+void LobbyScene::runScene()
 {
 	while(1)
 	{

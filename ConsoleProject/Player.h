@@ -7,8 +7,6 @@ class Player :public Unit
 public:
 	Player(string n, int a, int h, int m);
 public:
-	void equippedItem();
-	void UnEquippedItem();
 	void EarnMoney();
 };
 

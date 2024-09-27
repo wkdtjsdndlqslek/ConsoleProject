@@ -5,7 +5,7 @@
 class TitleScene:public Scene
 {
 public:
-	int runScene()override;
+	void runScene()override;
 	void PrintScene()override;
 };
 
