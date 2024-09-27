@@ -25,10 +25,16 @@ public:
 
 	int GetNumber();
 
+	//카드 숫자크기로 정렬
+	void CardSort(int n[],std::string s[]);
+
 	//카드 초기화 및 셔플
 	void cardSetting(Poker c[]);
 
-	//초기 카드 4장 뽑기
+	// 몬스터 카드 뽑기
+	void MonsterDraw(int n, Poker c[], int& u);
+
+	// 카드 n장 뽑기
 	void draw(int n, Poker c[], int& u);
 
 	//버릴 카드 보여주기
@@ -37,18 +43,28 @@ public:
 	////버릴 카드 뽑기
 	void chooseTrashCards(int u, Poker c[]);
 	
-	//카드 출력
+	//카드 출력 (함수 오버로딩)
+	void PrintCard(int n[],std::string s[],int i);
 	void PrintCard(Poker c[], int num);
 
 	//최종 카드 출력
-	void finalCards(Poker c[]);
+	void finalCards(int n[], std::string s[]);
 
-	//포커 시작
-	void playPoker();
+	//페어 확인
+	void CheckPair(int n[], std::string s[],int cphp[]);
+
+	//탑, 스트레이트, 플러쉬 확인
+	int CheckTopStrateFlush(int n[], std::string s[]);
+
+	//족보 판별
+	void checkNumRanking(int n[],std::string s[]);
 
 	//족보 평가
-	void evaluate(Poker c[]);
+	void evaluate(Poker c[],int u);
 	
-	void checkNumRanking(int n[]);
+	//포커 시작
+	void playPoker();
+	
+	
 };
 
