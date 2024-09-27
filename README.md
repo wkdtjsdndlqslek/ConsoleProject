@@ -6,7 +6,7 @@
 
 ## Flow chart
 
-![FlowChart](https://github.com/user-attachments/assets/a4fa23df-95d3-4577-8460-94c00624e708)
+![FlowChart.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/68a29e8f-e221-4ae6-8efa-8574f019ed4c/aece1e30-6e7e-41f1-b054-3304741a58f8/FlowChart.png)
 
 ---
 
@@ -46,7 +46,7 @@
     - 가격 (int)
 - **메서드**:
     - `equippedItem()`: 아이템 사용 시 효과 적용
-    - 
+    
 
 ### 2.4 스테이지 관리 (StageManager)
 
@@ -120,7 +120,8 @@
     - `draw()`: 카드 드로우
     - `chooseTrashCards()`: 카드 버림
     - `evaluateHand()`: 핸드 평가 및 족보 결정
-    -`bubbleSort()`: 카드 정렬 후 스트레이트 판별
+    - `BubbleSort()`: 카드 정렬 후 스트레이트 판별
+    
     ---
     
 
