@@ -401,7 +401,7 @@ void Poker::checkNumRanking(int n[], std::string s[])
 	int CP = checkPairHighPair[0];
 	int HP = checkPairHighPair[1];//HP는 페어 중 높은 숫자
 	
-	int triple = checkPairHighPair[2];//triple은 풀하우스가 떴을 때 더 높은 숫자의 페어가 아닌 트리플의 숫자를 가져오기 위함.
+	int triple = checkPairHighPair[2];//triple은 트리플이 페어보다 더 낮은 숫자의 풀하우스가 떴을 때 페어가 아닌 트리플의 숫자를 가져오기 위함.
 	if (CP == 4)//플러쉬 보다 우선 순위
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
