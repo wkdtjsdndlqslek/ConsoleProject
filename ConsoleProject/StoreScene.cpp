@@ -1,7 +1,11 @@
 #include "StoreScene.h"
+#include"Player.h"
 
 void StoreScene::runScene()
 {
+	std::cout <<"보유 금액"<< GetMoney() << std::endl;
+	std::cout << "구매할 아이탬을 선택해 주세요." << std::endl;
+	
 
 }
 

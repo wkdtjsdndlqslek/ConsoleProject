@@ -3,6 +3,6 @@
 #include"Scene.h"
 class BattleScene:public Scene
 {
-	int runScene()override;
+	void runScene()override;
 };
 

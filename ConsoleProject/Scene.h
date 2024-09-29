@@ -1,13 +1,15 @@
 #pragma once
+#include "Player.h"
 #include <iostream>
 
 class Scene
 {
 private:
-	std::string sceneName;
-	std::string sceneDesc;
+	Player* player;
 public:
-	Scene(std::string sn, std::string sd);
+	Scene() {
+		player = new Player();
+	}
 public:
 	virtual void runScene()=0;
 	virtual void PrintScene()=0;
