@@ -1,3 +1,6 @@
-﻿  Poker.cpp
-C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\Poker.cpp(191,17): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  BattleScene.cpp
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\BattleScene.cpp(17,36): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\BattleScene.cpp(23,34): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DungeonScene.cpp
+  코드를 생성하고 있습니다...
   ConsoleProject.vcxproj -> C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\x64\Debug\ConsoleProject.exe

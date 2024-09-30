@@ -1,16 +1,18 @@
 #pragma once
-#include"Scene.h"
 #include<iostream>
 #include<vector>
 #include"Item.h"
-class StoreScene:public Scene
+class StoreScene
 {
 protected:
 	std::vector<Item> sellingItems;
-public: 
-	void runScene()override;
 	
-	void displayItem();
+public: 
+	void runScene(Player* player);
+	
+	void SellingItems();
+
+	void displaySellingItems(const std::vector<Item>& SellingItems) const;
 
 
 };

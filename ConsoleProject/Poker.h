@@ -60,14 +60,14 @@ public:
 	//탑, 스트레이트, 플러쉬 확인
 	int CheckTopStrateFlush(int n[], std::string s[]);
 
-	//족보 판별
-	void checkNumRanking(int n[],std::string s[]);
+	//족보 판별 후 공격력 계수 설정
+	double checkNumRanking(int n[],std::string s[]);
 
 	//족보 평가
-	void evaluate(Poker c[],int u);
+	void evaluate(Poker c[],int u, double& MAR, double& PAR);
 	
 	//포커 시작
-	void playPoker();
+	double playPoker(double& MAR, double& PAR);
 	
 	
 };

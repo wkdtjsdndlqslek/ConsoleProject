@@ -394,10 +394,11 @@ int Poker::CheckTopStrateFlush(int n[],std::string s[])
 	return checkTopStrateFlush;
 }
 
-void Poker::checkNumRanking(int n[], std::string s[])
+double Poker::checkNumRanking(int n[], std::string s[])
 {
 	int checkPairHighPair[3];//CheckPair의 리턴 값을 세 개 받아오기 위해 만든 배열
 	CheckPair(n,s,checkPairHighPair);
+	double attRatio=0.0f;//공격력 계수
 	int CP = checkPairHighPair[0];
 	int HP = checkPairHighPair[1];//HP는 페어 중 높은 숫자
 	
@@ -406,11 +407,21 @@ void Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(HP) << " FULL HOUSE입니다." << std::endl;
+			std::cout << ifCardIsRoyal(triple) << " FULL HOUSE입니다." << std::endl;
+			if (ifCardIsRoyal(triple) == "ACE")
+			{
+				triple = 14;
+				attRatio = triple / 100.0 + 2.0;
+			}
+			else
+			{
+				attRatio = triple / 100.0 + 2.0;
+			}
 		}
 		else
 		{
 			std::cout << triple << " FULL HOUSE입니다." << std::endl;
+			attRatio = triple / 100.0 + 2.0;
 		}
 	}
 	else if (CP == 6)//플러쉬 보다 우선 순위
@@ -418,10 +429,20 @@ void Poker::checkNumRanking(int n[], std::string s[])
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
 			std::cout << ifCardIsRoyal(HP) << " FOUR CARD입니다." << std::endl;
+			if (HP == 1)
+			{
+				HP = 14;
+				attRatio = HP / 100.0 + 2.5;
+			}
+			else
+			{
+				attRatio = HP / 100.0 + 2.5;
+			}
 		}
 		else
 		{
 			std::cout << HP << " FOUR CARD입니다." << std::endl;
+			attRatio = HP / 100.0 + 2.5;
 		}
 	}
 	else if (CP ==0)
@@ -431,10 +452,20 @@ void Poker::checkNumRanking(int n[], std::string s[])
 			if (n[1] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
 				std::cout << ifCardIsRoyal(n) << " FLUSH입니다." << std::endl;
+				if (n[0] == 1)
+				{
+					n[0] = 14;
+					attRatio = n[0] / 100.0 + 1.8;
+				}
+				else
+				{
+					attRatio = n[4] / 100.0 + 1.8;
+				}
 			}
 			else
 			{
 				std::cout << n[4] << " FLUSH입니다." << std::endl;
+				attRatio = n[4] / 100.0 + 1.8;
 			}
 		}
 		else if (CTSF == 2)
@@ -442,10 +473,20 @@ void Poker::checkNumRanking(int n[], std::string s[])
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
 				std::cout << ifCardIsRoyal(n) << " STRATE입니다." << std::endl;
+				if (n[0] == 1)
+				{
+					n[0] = 14;
+					attRatio = n[0] / 100.0 + 1.6;
+				}
+				else
+				{
+					attRatio = n[4] / 100.0 + 1.6;
+				}
 			}
 			else
 			{
 				std::cout << n[4] << " STRATE입니다." << std::endl;
+				attRatio = n[4] / 100.0 + 1.6;
 			}
 		}
 		else if (CTSF == 3)
@@ -453,25 +494,46 @@ void Poker::checkNumRanking(int n[], std::string s[])
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
 				std::cout << ifCardIsRoyal(n) << " STRATE FLUSH입니다." << std::endl;
+				if (n[0] == 1)
+				{
+					n[0] = 14;
+					attRatio = n[0] / 100.0 + 4.0;
+				}
+				else
+				{
+					attRatio = n[4] / 100.0 + 4.0;
+				}
 			}
 			else
 			{
 				std::cout << n[4] << " STRATE FLUSH입니다." << std::endl;
+				attRatio = n[4] / 100.0 + 4.0;
 			}
 		}
 		else if (CTSF == 11)
 		{
 			std::cout << " ROYAL STRATE FLUSH입니다." << std::endl;
+			attRatio = 10;
 		}
 		else
 		{
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
 				std::cout << ifCardIsRoyal(n) << " TOP입니다." << std::endl;
+				if (n[0] == 1)
+				{
+					n[0] = 14;
+					attRatio = n[0] / 100.0 + 0.8;
+				}
+				else
+				{
+					attRatio = n[4] / 100.0 + 0.8;
+				}
 			}
 			else
 			{
 				std::cout << n[4] << " TOP입니다." << std::endl;
+				attRatio = n[4] / 100.0 + 0.8;
 			}
 		}
 	}
@@ -480,10 +542,20 @@ void Poker::checkNumRanking(int n[], std::string s[])
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
 			std::cout << ifCardIsRoyal(HP) << " ONE PAIR입니다." << std::endl;
+			if (HP == 1)
+			{
+				HP = 14;
+				attRatio = HP / 100.0 + 1.0;
+			}
+			else
+			{
+				attRatio = HP / 100.0 + 1.0;
+			}
 		}
 		else
 		{
 			std::cout << HP << " ONE PAIR입니다." << std::endl;
+			attRatio = HP / 100.0 + 1.0;
 		}
 	}
 	else if (CP == 2)
@@ -491,10 +563,20 @@ void Poker::checkNumRanking(int n[], std::string s[])
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
 			std::cout << ifCardIsRoyal(HP) << " TWO PAIR입니다." << std::endl;
+			if (HP == 1)
+			{
+				HP = 14;
+				attRatio = HP / 100.0 + 1.2;
+			}
+			else
+			{
+				attRatio = HP / 100.0 + 1.2;
+			}
 		}
 		else
 		{
 			std::cout << HP << " TWO PAIR입니다." << std::endl;
+			attRatio = HP / 100.0 + 1.2;
 		}
 	}
 	else if (CP == 3)
@@ -502,18 +584,27 @@ void Poker::checkNumRanking(int n[], std::string s[])
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
 			std::cout << ifCardIsRoyal(HP) << " TRIPLE입니다." << std::endl;
+			if (HP == 1)
+			{
+				HP = 14;
+				attRatio = HP / 100.0 + 1.4;
+			}else
+			{
+				attRatio = HP / 100.0 + 1.4;
+			}
 		}
 		else
 		{
 			std::cout << HP << " TRIPLE입니다." << std::endl;
+			attRatio = HP / 100.0 + 1.4;
 		}
 	}
-	
+	return attRatio;
 	
 	
 }
 
-void Poker::evaluate(Poker c[],int u)
+void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR)
 {
 	std::cout << "몬스터의 카드" << std::endl;
 	MonsterDraw(5, c, u);
@@ -561,10 +652,23 @@ void Poker::evaluate(Poker c[],int u)
 	CardSort(playernum, playershape);
 	CardSort(Monsternum, Monstershape);
 	std::cout << "몬스터는 ";
-	checkNumRanking(Monsternum, Monstershape);
+	MAR = checkNumRanking(Monsternum, Monstershape);
 	finalCards(playernum, playershape);
 	std::cout << "당신은 ";
-	checkNumRanking(playernum, playershape);
+	PAR = checkNumRanking(playernum, playershape);
+	std::cout << std::endl;
+	if (PAR > MAR)
+	{
+		std::cout << "플레이어가 승리하였습니다." << std::endl;
+	}
+	else if (PAR < MAR)
+	{
+		std::cout << "몬스터가 승리하였습니다." << std::endl;
+	}
+	else
+	{
+		std::cout << "무승부입니다." << std::endl;
+	}
 	
 }
 
@@ -586,7 +690,7 @@ void Poker::finalCards(int n[],std::string s[])
 }
 
 
-void Poker::playPoker()
+double Poker::playPoker(double& MAR, double& PAR)
 {
 	Poker cards[64];
 	cardSetting(cards);
@@ -598,7 +702,9 @@ void Poker::playPoker()
 	chooseTrashCards(usecard, cards);
 	draw(2, cards, usecard);
 	std::cout << std::endl;
-	evaluate(cards, usecard);
+	
+	evaluate(cards, usecard, MAR, PAR);
+	return 0;
 }
 
 

@@ -1,8 +1,10 @@
 #pragma once
 #include<iostream>
-#include"Scene.h"
-class BattleScene:public Scene
+#include"Player.h"
+#include"Monster.h"
+class BattleScene
 {
-	void runScene()override;
+public:
+	void runScene(Player* player, Monster* monster);
 };
 

@@ -1,10 +1,9 @@
 #pragma once
-#include"Scene.h"
+#include "Player.h"
 #include<iostream>
-class LobbyScene: public Scene
+class LobbyScene
 {
 public:
-	void runScene()override;
-	void PrintScene()override;
+	void runScene(Player* player);
 };
 

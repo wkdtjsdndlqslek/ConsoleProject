@@ -129,28 +129,38 @@
   <ItemGroup>
     <ClCompile Include="BattleScene.cpp" />
     <ClCompile Include="DungeonScene.cpp" />
-    <ClCompile Include="InventoryScene.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InventoryScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Item.cpp" />
-    <ClCompile Include="LobbyScene.cpp" />
+    <ClCompile Include="LobbyScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Poker.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="StoreScene.cpp" />
-    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="StoreScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleScene.h" />
     <ClInclude Include="DungeonScene.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="InventoryScene.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="LobbyScene.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Poker.h" />
-    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Poker.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="StoreScene.h" />
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="Unit.h" />

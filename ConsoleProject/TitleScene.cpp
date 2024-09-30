@@ -1,6 +1,6 @@
 #include "TitleScene.h"
 
-void TitleScene::runScene()
+void TitleScene::runScene(Player* player)
 {
 	while (1)
 	{
@@ -17,9 +17,4 @@ void TitleScene::runScene()
 		default:std::cout << "다시 입력 해주세요" << std::endl;
 		}
 	}
-}
-
-void TitleScene::PrintScene()
-{
-
 }

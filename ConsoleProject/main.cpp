@@ -1,12 +1,13 @@
 #include<iostream>
 #include"Poker.h"
+#include"Game.h"
 
 using namespace std;
 
 int main()
 {
-	Poker* p = new Poker;
-	p->playPoker();
+	Game g;
+	g.RunGame();
 	
 	
 }
