@@ -18,6 +18,7 @@ void DungeonScene::runScene(Player* player)
 		monster =new Monster("°íºí¸°", 90 + stage*10, 10 + stage, stage);
 		BattleScene b;
 		b.runScene(player,monster);
+		delete monster;
 		std::cout << std::endl;
 		int choice;
 		while (1)

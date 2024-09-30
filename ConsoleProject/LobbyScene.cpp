@@ -1,4 +1,8 @@
 #include "LobbyScene.h"
+#include "TitleScene.h"
+#include "StoreScene.h"
+#include "InventoryScene.h"
+#include "DungeonScene.h"
 
 void LobbyScene::runScene(Player* player)
 {
@@ -23,7 +27,6 @@ void LobbyScene::runScene(Player* player)
 			break;
 		default:
 			std::cout << "다시 입력해주세요." << std::endl;
-			break;
 		}
 	}
 }
