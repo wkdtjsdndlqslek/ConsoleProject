@@ -2,20 +2,20 @@
 #include"Player.h"
 #include"Game.h"
 #include"Item.h"
+#include"InventoryScene.h"
+#include"LobbyScene.h"
+#include "Choice.h"
 
-void StoreScene::runScene(Player* player)
+void StoreScene::runScene(Player* player, InventoryScene* inventory)
 {
-	std::cout <<"소지금액: "<< player->GetMoney() << endl;
-	std::cout << "구매하실 물건을 고르세요" << std::endl;
-	int choice;
-	std::cin >> choice;
-	
-
-	
-
+	while (1)
+	{
+		storeInformation(player,inventory);
+		buyItem(player,inventory);
+	}
 }
 
-void StoreScene::SellingItems()
+StoreScene::StoreScene()
 {
 	sellingItems.push_back(Item("종이 카드", 10, 100));
 	sellingItems.push_back(Item("플라스틱 카드", 20, 500));
@@ -34,8 +34,9 @@ void StoreScene::displaySellingItems(const std::vector<Item>& sellingItems) cons
 	{
 		const Item& item = sellingItems[i];
 
-		std::cout <<i+1<< item.GetItemName() << " 공격력 : " << item.GetItemAtt()<<" 가격 : "<<item.GetPrice() << std::endl;
+		std::cout <<i+1<<". " << item.GetItemName() << " 공격력 : " << item.GetItemAtt() << " 가격 : " << item.GetPrice() << std::endl;
 	}
 }
+
 
 

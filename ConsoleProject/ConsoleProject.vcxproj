@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BattleScene.cpp" />
+    <ClCompile Include="Choice.cpp" />
     <ClCompile Include="DungeonScene.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InventoryScene.cpp">
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleScene.h" />
+    <ClInclude Include="Choice.h" />
     <ClInclude Include="DungeonScene.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="InventoryScene.h" />
@@ -159,7 +161,7 @@
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Poker.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="StoreScene.h" />
     <ClInclude Include="TitleScene.h" />

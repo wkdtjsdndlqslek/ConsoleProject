@@ -1,7 +1,8 @@
 #include "TitleScene.h"
 #include "LobbyScene.h"
+#include "InventoryScene.h"
 
-void TitleScene::runScene(Player* player)
+void TitleScene::runScene(Player* player,InventoryScene* inventory)
 {
 	while (1)
 	{
@@ -13,7 +14,7 @@ void TitleScene::runScene(Player* player)
 		case 1:
 			std::cout << "게임시작" << std::endl;
 			LobbyScene lobby;
-			lobby.runScene(player);
+			lobby.runScene(player,inventory);
 			break;
 		case 2:std::cout << "게임종료" << std::endl;
 			break;

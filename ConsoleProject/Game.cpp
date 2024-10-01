@@ -4,10 +4,12 @@
 #include "LobbyScene.h"
 #include "DungeonScene.h"
 #include "TitleScene.h"
+#include"InventoryScene.h"
 
 Game::Game()
 {
 	player = new Player();
+	inventory = new InventoryScene();
 }
 
 Game::~Game()
@@ -18,7 +20,7 @@ Game::~Game()
 void Game::RunGame()
 {
 	TitleScene title;
-	title.runScene(player);
+	title.runScene(player,inventory);
 
 	
 }

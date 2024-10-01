@@ -22,7 +22,7 @@ void InventoryScene::EquippingItem(Player* player)
 	}
 }
 
-void InventoryScene::GetItem(Item& item)
+void InventoryScene::GotItem(Item& item)
 {
 	gotItems.push_back(item);
 }

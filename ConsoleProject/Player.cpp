@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "Unit.h"
 
-Player::Player():Unit("플레이어", 1000, 20, 0)
+Player::Player():Unit("플레이어", 1000, 20, 100)
 {
 	std::cout << "플레이어 이름을 입력하세요." << std::endl;
 	string playerName;
