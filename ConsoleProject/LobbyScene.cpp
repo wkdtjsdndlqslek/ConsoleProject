@@ -9,29 +9,24 @@ void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 	while(1)
 	{
 		CursorControl cursor;
-		cursor.gotoxy(0, 0);
 		PrintScene();
 		int choice=PrintMenu();
 		if (choice == 0)//switch문 사용 불가
 		{
-			std::cout << "상점으로 입장합니다." << std::endl;
 			StoreScene store;
 			store.runScene(player, inventory);
 		}
 		else if (choice == 1)
 		{
-			std::cout << "인벤토리를 확인합니다." << std::endl;
 			inventory->runScene(player,inventory);
 		}
 		else if (choice == 2)
 		{
-			std::cout << "던전으로 입장합니다." << std::endl;
 			DungeonScene dungeon;
 			dungeon.runScene(player);
 		}
 		else if (choice == 3)
 		{
-			std::cout << "타이틀 화면으로 입장합니다." << std::endl;
 			delete player;
 			player= nullptr;
 			delete inventory;
@@ -86,6 +81,7 @@ int LobbyScene::PrintMenu()
 void LobbyScene::PrintScene()
 {
 	CursorControl cursor;
+	cursor.gotoxy(0, 0);
 	std::cout << "                                                                                                                      " << std::endl;
 	std::cout << "  ■■■■■■■■■■■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
 	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;

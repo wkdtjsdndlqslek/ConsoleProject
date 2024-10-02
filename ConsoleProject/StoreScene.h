@@ -25,7 +25,7 @@ public:
 
 	void buyItem(Player* player, InventoryScene* inventory);
 
-
+	void PrintScene();
 
 };
 

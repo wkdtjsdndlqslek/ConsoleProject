@@ -5,11 +5,16 @@
 #include "InventoryScene.h"
 #include "LobbyScene.h"
 #include "Choice.h"
+#include "CursorControl.h"
 
 void StoreScene::runScene(Player* player, InventoryScene* inventory)
 {
 	while (1)
 	{
+		CursorControl cursor;
+		PrintScene();
+		cursor.gotoxy(30, 3);
+		std::cout << ">";
 		storeInformation(player,inventory);
 		buyItem(player,inventory);
 	}
@@ -18,23 +23,23 @@ void StoreScene::runScene(Player* player, InventoryScene* inventory)
 StoreScene::StoreScene()
 {
 	sellingItems.push_back(Item("종이 카드", 10, 100));
-	sellingItems.push_back(Item("플라스틱 카드", 20, 500));
+	sellingItems.push_back(Item("골판지 카드", 20, 500));
 	sellingItems.push_back(Item("나무 카드", 30, 1000));
 	sellingItems.push_back(Item("돌 카드", 100, 5000));
 	sellingItems.push_back(Item("청동 카드", 200, 10000));
 	sellingItems.push_back(Item("철 카드", 1000, 100000));
 	sellingItems.push_back(Item("금강석 카드", 10000, 1000000));
-
-
 }
 
 void StoreScene::displaySellingItems(const std::vector<Item>& sellingItems) const
 {
+	CursorControl cursor;
 	for (size_t i=0;i<sellingItems.size();++i)
 	{
+		cursor.gotoxy(32, 3+2*i);
 		const Item& item = sellingItems[i];
-
-		std::cout <<i+1<<". " << item.GetItemName() << " 공격력 : " << item.GetItemAtt() << " 가격 : " << item.GetPrice() << std::endl;
+		std::cout <<i+1<<". " << item.GetItemName() << "		공격력 : " << item.GetItemAtt() << "		가격 : " << item.GetPrice() << std::endl;
+		std::cout << std::endl;
 	}
 }
 
@@ -43,6 +48,7 @@ void StoreScene::storeInformation(Player* player, InventoryScene* inventory)
 	Choice choice;
 	while (1)
 	{
+		CursorControl cursor;
 		displaySellingItems(sellingItems);
 		std::cout <<"보유 골드 "<< player->GetMoney()<<"골드" << std::endl;
 		std::cout << " 물건을 구매하시겠습니까?" << std::endl;
@@ -120,4 +126,45 @@ void StoreScene::buyItem(Player* player, InventoryScene* inventory)
 	}
 }
 
-
+void StoreScene::PrintScene()
+{
+	CursorControl cursor;
+	cursor.gotoxy(0, 0);
+	std::cout << "                                                                                                                      " << std::endl;
+	std::cout << "  ■■■■■■■■■■■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
+	std::cout << "  ■■■■■■■■■■■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+	std::cout << "                                                                                                                        " << std::endl;
+	std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■                                                                                                                ■  " << std::endl;
+	std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+	cursor.gotoxy(6, 3);
+	std::cout << "> 상점" << std::endl;
+	cursor.gotoxy(8, 5);
+	std::cout << "인벤토리" << std::endl;
+	cursor.gotoxy(8, 7);
+	std::cout << "던전" << std::endl;
+	cursor.gotoxy(8, 9);
+	std::cout << "타이틀" << std::endl;
+}
