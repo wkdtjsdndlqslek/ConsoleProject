@@ -1,24 +1,23 @@
 #pragma once
 #include<iostream>
 #include<vector>
-#include"Item.h"
-#include "Player.h"
-#include "Choice.h"
+#include "Item.h"
 
+class Player;
 class InventoryScene;
-class LobbyScene;
-
 
 class StoreScene
 {
 protected:
 	std::vector<Item> sellingItems;
+	
 public:
 	StoreScene();
+
 public: 
 	void runScene(Player* player, InventoryScene* inventory);
 
-	void displaySellingItems(const std::vector<Item>& SellingItems) const;
+	void displaySellingItems(const std::vector<Item>& sellingItems) const;
 
 	void storeInformation(Player* player, InventoryScene* inventory);
 

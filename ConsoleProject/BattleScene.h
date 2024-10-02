@@ -1,7 +1,8 @@
 #pragma once
 #include<iostream>
-#include"Player.h"
 #include"Monster.h"
+
+class Player;
 class BattleScene
 {
 public:

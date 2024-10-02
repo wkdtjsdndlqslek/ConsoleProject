@@ -4,7 +4,6 @@
 #include "LobbyScene.h"
 #include "DungeonScene.h"
 #include "TitleScene.h"
-#include"InventoryScene.h"
 
 Game::Game()
 {
@@ -20,7 +19,7 @@ Game::~Game()
 void Game::RunGame()
 {
 	TitleScene title;
-	title.runScene(player,inventory);
+	title.runScene(player, inventory);
 
 	
 }

@@ -1,11 +1,10 @@
 #include "StoreScene.h"
+#include"Item.h"
 #include"Player.h"
 #include"Game.h"
-#include"Item.h"
-#include"InventoryScene.h"
-#include"LobbyScene.h"
+#include "InventoryScene.h"
+#include "LobbyScene.h"
 #include "Choice.h"
-
 
 void StoreScene::runScene(Player* player, InventoryScene* inventory)
 {
@@ -45,6 +44,7 @@ void StoreScene::storeInformation(Player* player, InventoryScene* inventory)
 	while (1)
 	{
 		displaySellingItems(sellingItems);
+		std::cout <<"보유 골드 "<< player->GetMoney()<<"골드" << std::endl;
 		std::cout << " 물건을 구매하시겠습니까?" << std::endl;
 		int select = choice.choiceYesOrNo();
 		if (select == 1)
@@ -75,7 +75,7 @@ void StoreScene::buyCheck(Player* player, InventoryScene* inventory,int selectIt
 		{
 			inventory->GotItem(sellingItems[selectItem - 1]);
 			player->SetMoney(player->GetMoney() - sellingItems[selectItem - 1].GetPrice());
-			std::cout << "구매완료" << std::endl;
+			std::cout << "구매완료 " <<player->GetMoney() << "골드 남았습니다." << std::endl;
 			break;
 		}
 		else if (select == 0)
@@ -96,7 +96,7 @@ void StoreScene::buyItem(Player* player, InventoryScene* inventory)
 	{
 		
 		displaySellingItems(sellingItems);
-		std::cout << "소지금액: " << player->GetMoney() << endl;
+		std::cout << "보유 골드 " << player->GetMoney() << endl;
 		std::cout << "구매하실 물건을 고르세요" << std::endl;
 		int selectItem;
 		std::cin >> selectItem;

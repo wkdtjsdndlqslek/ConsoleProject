@@ -15,7 +15,7 @@ void DungeonScene::runScene(Player* player)
 	{
 		std::cout << "stage" << stage << std::endl;
 		Monster* monster;
-		monster =new Monster("고블린", 90 + stage*10, 10 + stage, stage);
+		monster =new Monster("고블린", 90 + stage*10, 10 + stage, stage*100);
 		BattleScene b;
 		b.runScene(player,monster);
 		delete monster;

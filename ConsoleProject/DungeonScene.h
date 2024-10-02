@@ -1,9 +1,9 @@
 #pragma once
 #include "Monster.h"
-#include "Player.h"
 #include <iostream>
 #include <vector>
 
+class Player;
 
 class DungeonScene
 {

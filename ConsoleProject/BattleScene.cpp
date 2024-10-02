@@ -1,6 +1,6 @@
 #include "BattleScene.h"
 #include "Poker.h"
-#include <iostream>
+#include "Player.h" 
 
 void BattleScene::runScene(Player* player, Monster* monster)
 {

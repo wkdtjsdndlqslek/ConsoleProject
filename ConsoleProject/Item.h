@@ -1,7 +1,6 @@
 #pragma once
 #include<iostream>
-#include "Player.h"
-#include "Choice.h"
+
 class Item
 {
 protected:
@@ -18,6 +17,5 @@ public:
 	int GetPrice()const;
 	bool isEquipped(const Item& item)const;
 	void SetEquipped(bool value);
-	
 };
 

@@ -6,7 +6,7 @@
 
 void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 {
-	while (1)
+	while(1)
 	{
 		std::cout << "1.상점 2.인벤토리 3.던전 4. 타이틀화면" << std::endl;
 		int choice;
@@ -15,12 +15,12 @@ void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 		{
 			std::cout << "상점으로 입장합니다." << std::endl;
 			StoreScene store;
-			store.runScene(player,inventory);
+			store.runScene(player, inventory);
 		}
 		else if (choice == 2)
 		{
 			std::cout << "인벤토리를 확인합니다." << std::endl;
-			inventory->runScene(player);
+			inventory->runScene(player,inventory);
 		}
 		else if (choice == 3)
 		{
@@ -31,8 +31,7 @@ void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 		else if (choice == 4)
 		{
 			std::cout << "타이틀 화면으로 입장합니다." << std::endl;
-			TitleScene title;
-			title.runScene(player,inventory);
+			return;
 		}
 		else
 		{
@@ -40,4 +39,3 @@ void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 		}
 	}
 }
-
