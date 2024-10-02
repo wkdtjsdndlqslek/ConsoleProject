@@ -12,5 +12,7 @@ class LobbyScene
 {
 public:
 	void runScene(Player* player, InventoryScene* inventory);
+	void PrintScene();
+	int PrintMenu();
 };
 

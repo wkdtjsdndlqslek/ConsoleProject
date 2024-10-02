@@ -1,13 +1,19 @@
 #pragma once
 #include <iostream>
-#include "Player.h"
+#include "CursorControl.h"
 
 class LobbyScene;
+class Player;
 class InventoryScene;
 
 class TitleScene
 {
+
+	Player* player;
+	InventoryScene* inventory;
 public:
-	void runScene(Player* player, InventoryScene* inventory);
+	void PrintScene(int num);
+	void runScene();
+	int PrintMenu();
 };
 

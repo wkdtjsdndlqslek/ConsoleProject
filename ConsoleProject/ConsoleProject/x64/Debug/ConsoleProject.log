@@ -1,9 +1,20 @@
-﻿  Game.cpp
-  InventoryScene.cpp
-  LobbyScene.cpp
-  main.cpp
-  Player.cpp
-  StoreScene.cpp
+﻿  LobbyScene.cpp
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\CursorControl.h(17,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 'LobbyScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\CursorControl.h(17,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 'LobbyScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\LobbyScene.cpp(35,4): warning C4150: 불완전한 형식 'Player'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+      C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\LobbyScene.h(3,7):
+      'Player' 선언을 참조하십시오.
+  
   TitleScene.cpp
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\CursorControl.h(17,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 'TitleScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\CursorControl.h(17,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 'TitleScene.cpp'을(를) 컴파일하는 중)
+  
   코드를 생성하고 있습니다...
   ConsoleProject.vcxproj -> C:\Users\KGA\Desktop\ConsoleProject\ConsoleProject\x64\Debug\ConsoleProject.exe

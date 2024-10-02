@@ -1,24 +1,155 @@
 #include "TitleScene.h"
 #include "LobbyScene.h"
 #include "InventoryScene.h"
+#include"Player.h"
+#include"InventoryScene.h"
 
-void TitleScene::runScene(Player* player, InventoryScene* inventory)
+void TitleScene::runScene()
 {
+	CursorControl cursor;
 	while (1)
 	{
-		std::cout << "1.게임하기 2. 종료" << std::endl;
-		int choice;
-		std::cin >> choice;
+		PrintScene(1);
+		int choice = PrintMenu();
 		switch (choice)
 		{
-		case 1:
+		case 0:
+			cursor.gotoxy(0, 0);
+			PrintScene(2);
+			cursor.gotoxy(6, 23);
 			std::cout << "게임시작" << std::endl;
+			cursor.gotoxy(6, 25);
+			player = new Player();
+			inventory = new InventoryScene();
 			LobbyScene lobby;
 			lobby.runScene(player, inventory);
 			break;
-		case 2:std::cout << "게임종료" << std::endl;
+		case 1:std::cout << " 종료" << std::endl;
 			break;
-		default:std::cout << "다시 입력 해주세요" << std::endl;
 		}
+		if(choice == 1) break;
+	}
+}
+
+int TitleScene::PrintMenu()
+{
+	CursorControl cursor;
+	int choice = 0;
+	while (1)
+	{
+		int input;
+		if (_kbhit())
+		{
+			input = _getch();
+			if (input == 224)
+			{
+				input = _getch();
+			}
+			switch (input)
+			{
+				TitleScene title;
+			case UP:
+				cursor.gotoxy(0, 0);
+				title.PrintScene(1);
+				cursor.gotoxy(54, 21);
+				std::cout << " ";
+				cursor.gotoxy(54, 20);
+				std::cout << ">";
+				if (choice > 0)
+				{
+					choice--;
+				}
+				break;
+			case DOWN:
+				cursor.gotoxy(0, 0);
+				title.PrintScene(1);
+				cursor.gotoxy(54, 20);
+				std::cout << " ";
+				cursor.gotoxy(54, 21);
+				std::cout << ">";
+				if (choice <1)
+				{
+					choice++;
+				}
+				break;
+			case SPACE:
+				return choice;
+			}
+		}
+	}
+}
+
+void TitleScene::PrintScene(int num)
+{
+	CursorControl cursor;
+	if (num == 1)
+	{
+		cursor.gotoxy(0, 0);
+		std::cout << std::endl;
+		std::cout << "   ■■■    ■■■   ■      ■ ■■■■   ■■       ■■■■■ ■■■■■■■■■■■■■■■■■■■■■■■■      " << std::endl;
+		std::cout << "  ■        ■    ■  ■■  ■■ ■      ■ ■■       ■         ■■■■■■■■■■■■■■■■■                    " << std::endl;
+		std::cout << "  ■  ■■ ■■■■■ ■  ■  ■ ■■■■   ■■       ■■■■■ ■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+		std::cout << "  ■    ■ ■      ■ ■  ■  ■ ■      ■ ■■       ■         ■■■■■■■■■■■■■■■■■                    " << std::endl;
+		std::cout << "  ■■■■ ■      ■ ■  ■  ■ ■■■■   ■■■■■ ■■■■■ ■■■■■■■■■■■■■■■■■■■■■            " << std::endl;
+		std::cout << "                                                                  ■■■■■■■■■■■■■■■■■                    " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                    " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■            " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                          " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                      " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                          " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                          " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		cursor.gotoxy(54, 20);
+		std::cout << "> 게임하기" << std::endl;
+		cursor.gotoxy(56, 21);
+		std::cout << "종료" << std::endl;
+	}
+	else if (num == 2)
+	{
+		cursor.gotoxy(0, 0);
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "                                                                                                                        " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■                                                                                                                ■  " << std::endl;
+		std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
 	}
 }

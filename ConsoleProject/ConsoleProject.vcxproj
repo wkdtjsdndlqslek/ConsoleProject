@@ -131,6 +131,7 @@
     <ClCompile Include="Choice.cpp" />
     <ClCompile Include="DungeonScene.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="CursorControl.cpp" />
     <ClCompile Include="InventoryScene.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
@@ -155,6 +156,7 @@
     <ClInclude Include="Choice.h" />
     <ClInclude Include="DungeonScene.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="CursorControl.h" />
     <ClInclude Include="InventoryScene.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="LobbyScene.h" />
