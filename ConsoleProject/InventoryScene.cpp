@@ -2,9 +2,11 @@
 #include <vector>
 #include<iostream>
 
-void InventoryScene::runScene(Player* player)
+void InventoryScene::runScene(Player* player, InventoryScene* inventory)
 {
-	EquippingItem(player);
+	displayGotItems(gotItems);
+	EquipOrUnEquip(player);
+	
 }
 
 void InventoryScene::EquippingItem(Player* player)
@@ -18,7 +20,10 @@ void InventoryScene::EquippingItem(Player* player)
 		{
 			Item& selectItem = gotItems[choice - 1];
 			player->EquippedItem(selectItem);
+			std::cout << "장착되었습니다." << std::endl;
+			selectItem.SetEquipped(1);
 		}
+		else std::cout << "다시 입력해주세요." << std::endl;
 	}
 }
 
@@ -37,7 +42,7 @@ void InventoryScene::displayGotItems(const std::vector<Item>& gotItems)const
 	else {
 		for (const auto& item : gotItems)
 		{
-			int i = 0;
+			int i = 1;
 			std::cout << i++ << ". ";
 			if (item.isEquipped(item))
 			{
@@ -48,7 +53,7 @@ void InventoryScene::displayGotItems(const std::vector<Item>& gotItems)const
 	}
 }
 
-void InventoryScene::UnEquippingItem()
+void InventoryScene::UnEquippingItem(Player* player)
 {
 }
 

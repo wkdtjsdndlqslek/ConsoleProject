@@ -1,6 +1,7 @@
 #pragma once
 #include "Player.h"
-#include "InventoryScene.h"
+
+class Inventory;
 
 class Game
 {

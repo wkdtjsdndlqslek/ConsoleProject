@@ -9,16 +9,21 @@ void TitleScene::runScene(Player* player,InventoryScene* inventory)
 		std::cout << "1.게임하기 2. 종료" << std::endl;
 		int choice;
 		std::cin >> choice;
-		switch (choice)
+		if (choice == 1)
 		{
-		case 1:
 			std::cout << "게임시작" << std::endl;
 			LobbyScene lobby;
-			lobby.runScene(player,inventory);
+			lobby.runScene(player, inventory);
 			break;
-		case 2:std::cout << "게임종료" << std::endl;
+		}
+		else if (choice == 2)
+		{
+			std::cout << "게임종료" << std::endl;
 			break;
-		default:std::cout << "다시 입력 해주세요" << std::endl;
+		}
+		else
+		{
+			std::cout << "다시 입력 해주세요" << std::endl;
 		}
 	}
 }

@@ -1,7 +1,9 @@
 #pragma once
 #include "Player.h"
-#include "InventoryScene.h"
 #include<iostream>
+#include"Item.h"
+
+class InventoryScene;
 
 class LobbyScene
 {

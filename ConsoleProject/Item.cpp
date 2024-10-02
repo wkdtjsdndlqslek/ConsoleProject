@@ -1,4 +1,5 @@
 #include "Item.h"
+#include "Player.h"
 
 Item::Item(const std::string& in, int ia, int p):itemName(in),itemAtt(ia),price(p),equipped(false)
 {
@@ -32,3 +33,5 @@ void Item::SetEquipped(bool value)
 {
 	equipped = value;
 }
+
+

@@ -27,7 +27,8 @@ void Player::EquippedItem(Item& item)
 
 void Player::UnEquippedItem(Item& item)
 {
-
+	equippedItems.pop_back();
+	Att -= item.GetItemAtt();
 }
 
 

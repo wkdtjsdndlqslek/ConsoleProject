@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include "Player.h"
-#include "InventoryScene.h"
+class InventoryScene;
+class LobbyScene;
+
 class TitleScene
 {
 public:
