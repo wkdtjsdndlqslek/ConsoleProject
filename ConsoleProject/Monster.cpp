@@ -1,6 +1,7 @@
 #include "Monster.h"
+#include "CursorControl.h"
 
-Monster::Monster(std::string n, int h, int a, int m):Unit(n, h, a, m)
+Monster::Monster(std::string n, double h, int a, int m):Unit(n, h, a, m)
 {
-	std::cout << n << "ÀÌ ³ªÅ¸³µ´Ù!" << std::endl;
+	CursorControl cursor;
 }

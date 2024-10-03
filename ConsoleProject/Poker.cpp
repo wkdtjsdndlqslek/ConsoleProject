@@ -1,5 +1,8 @@
 #include<iostream>
 #include "Poker.h"
+#include "CursorControl.h"
+#include "UIDesign.h"
+#include "BattleScene.h"
 
 void Poker::SetshapeNumber(int sn)
 {
@@ -85,7 +88,6 @@ void Poker::CardSort(int n[],std::string s[])
 
 void Poker::draw(int n, Poker c[], int& u)
 {
-	std::cout << n << "장 드로우" << std::endl;
 	for (int i = 0; i < n; i++)
 	{
 		c[53 + i + u].SetNumber(c[i + u].GetNumber());
@@ -110,7 +112,7 @@ void Poker::draw(int n, Poker c[], int& u)
 		{
 			std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
 		}
-		std::cout << "	";
+		std::cout << " ";
 	}
 	std::cout << std::endl;
 	u += n;
@@ -142,7 +144,7 @@ void Poker::MonsterDraw(int n, Poker c[], int& u)
 		{
 			std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
 		}
-		std::cout << "	";
+		std::cout << " ";
 	}
 	u += n;
 }
@@ -256,47 +258,40 @@ void Poker::PrintCard(Poker c[], int num)
 
 void Poker::chooseTrashCards(int u, Poker c[])
 {
-	while (1)
+	CursorControl cursor;
+	UIDesign ui;
+	ui.onlyBottomDesign();
+	cursor.gotoxy(6, 23);
+	std::cout << "버릴 카드를 선택해주세요." << std::endl;
+	cursor.gotoxy(45, 18);
+	std::cout << "＾";
+	int throwCard = printMenu();
+	ui.onlyBottomDesign();
+	cursor.gotoxy(6,23);
+	switch (throwCard)
 	{
-		std::cout << "버릴 카드를 선택해주세요." << std::endl;
-		chooseCards(u, c);
-
-		int throwCard;
-		std::cin >> throwCard;
-
-		if (throwCard == 1)
-		{
-			PrintCard(c, 53);
-			std::cout << "를 버리셨습니다." << std::endl;
-			c[53].SetNumber(0);
-			break;
-		}
-		else if (throwCard == 2)
-		{
-			PrintCard(c, 54);
-			std::cout << "를 버리셨습니다." << std::endl;
-			c[54].SetNumber(0);
-			break;
-		}
-		else if (throwCard == 3)
-		{
-			PrintCard(c, 55);
-			std::cout << "를 버리셨습니다." << std::endl;
-			c[55].SetNumber(0);
-			break;
-		}
-		else if (throwCard == 4)
-		{
-			PrintCard(c, 56);
-			std::cout << "를 버리셨습니다." << std::endl;
-			c[56].SetNumber(0);
-			break;
-		}
-		else
-		{
-			std::cout << "숫자를 다시 입력해주세요." << std::endl;
-		}
+	case 0:
+		PrintCard(c, 53);
+		std::cout << "를 버리셨습니다." << std::endl;
+		c[53].SetNumber(0);
+		break;
+	case 1:
+		PrintCard(c, 54);
+		std::cout << "를 버리셨습니다." << std::endl;
+		c[54].SetNumber(0);
+		break;
+	case 2:
+		PrintCard(c, 55);
+		std::cout << "를 버리셨습니다." << std::endl;
+		c[55].SetNumber(0);
+		break;
+	case 3:
+		PrintCard(c, 56);
+		std::cout << "를 버리셨습니다." << std::endl;
+		c[56].SetNumber(0);
+		break;
 	}
+	
 }
 
 std::string Poker::ifCardIsRoyal(int h)
@@ -407,7 +402,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(triple) << " FULL HOUSE입니다." << std::endl;
+			std::cout << ifCardIsRoyal(triple) << " FULL HOUSE" << std::endl;
 			if (ifCardIsRoyal(triple) == "ACE")
 			{
 				triple = 14;
@@ -420,7 +415,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << triple << " FULL HOUSE입니다." << std::endl;
+			std::cout << triple << " FULL HOUSE" << std::endl;
 			attRatio = triple / 100.0 + 2.0;
 		}
 	}
@@ -428,7 +423,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(HP) << " FOUR CARD입니다." << std::endl;
+			std::cout << ifCardIsRoyal(HP) << " FOUR CARD" << std::endl;
 			if (HP == 1)
 			{
 				HP = 14;
@@ -441,7 +436,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << HP << " FOUR CARD입니다." << std::endl;
+			std::cout << HP << " FOUR CARD" << std::endl;
 			attRatio = HP / 100.0 + 2.5;
 		}
 	}
@@ -451,7 +446,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		{
 			if (n[1] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
-				std::cout << ifCardIsRoyal(n) << " FLUSH입니다." << std::endl;
+				std::cout << ifCardIsRoyal(n) << " FLUSH" << std::endl;
 				if (n[0] == 1)
 				{
 					n[0] = 14;
@@ -464,7 +459,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 			}
 			else
 			{
-				std::cout << n[4] << " FLUSH입니다." << std::endl;
+				std::cout << n[4] << " FLUSH" << std::endl;
 				attRatio = n[4] / 100.0 + 1.8;
 			}
 		}
@@ -472,7 +467,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		{
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
-				std::cout << ifCardIsRoyal(n) << " STRATE입니다." << std::endl;
+				std::cout << ifCardIsRoyal(n) << " STRATE" << std::endl;
 				if (n[0] == 1)
 				{
 					n[0] = 14;
@@ -485,7 +480,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 			}
 			else
 			{
-				std::cout << n[4] << " STRATE입니다." << std::endl;
+				std::cout << n[4] << " STRATE" << std::endl;
 				attRatio = n[4] / 100.0 + 1.6;
 			}
 		}
@@ -493,7 +488,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		{
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
-				std::cout << ifCardIsRoyal(n) << " STRATE FLUSH입니다." << std::endl;
+				std::cout << ifCardIsRoyal(n) << " STRATE FLUSH" << std::endl;
 				if (n[0] == 1)
 				{
 					n[0] = 14;
@@ -506,20 +501,20 @@ double Poker::checkNumRanking(int n[], std::string s[])
 			}
 			else
 			{
-				std::cout << n[4] << " STRATE FLUSH입니다." << std::endl;
+				std::cout << n[4] << " STRATE FLUSH" << std::endl;
 				attRatio = n[4] / 100.0 + 4.0;
 			}
 		}
 		else if (CTSF == 11)
 		{
-			std::cout << " ROYAL STRATE FLUSH입니다." << std::endl;
+			std::cout << " ROYAL STRATE FLUSH" << std::endl;
 			attRatio = 10;
 		}
 		else
 		{
 			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
 			{
-				std::cout << ifCardIsRoyal(n) << " TOP입니다." << std::endl;
+				std::cout << ifCardIsRoyal(n) << " TOP" << std::endl;
 				if (n[0] == 1)
 				{
 					n[0] = 14;
@@ -532,7 +527,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 			}
 			else
 			{
-				std::cout << n[4] << " TOP입니다." << std::endl;
+				std::cout << n[4] << " TOP" << std::endl;
 				attRatio = n[4] / 100.0 + 0.8;
 			}
 		}
@@ -541,7 +536,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(HP) << " ONE PAIR입니다." << std::endl;
+			std::cout << ifCardIsRoyal(HP) << " ONE PAIR" << std::endl;
 			if (HP == 1)
 			{
 				HP = 14;
@@ -554,7 +549,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << HP << " ONE PAIR입니다." << std::endl;
+			std::cout << HP << " ONE PAIR" << std::endl;
 			attRatio = HP / 100.0 + 1.0;
 		}
 	}
@@ -562,7 +557,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(HP) << " TWO PAIR입니다." << std::endl;
+			std::cout << ifCardIsRoyal(HP) << " TWO PAIR" << std::endl;
 			if (HP == 1)
 			{
 				HP = 14;
@@ -575,7 +570,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << HP << " TWO PAIR입니다." << std::endl;
+			std::cout << HP << " TWO PAIR" << std::endl;
 			attRatio = HP / 100.0 + 1.2;
 		}
 	}
@@ -583,7 +578,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	{
 		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
 		{
-			std::cout << ifCardIsRoyal(HP) << " TRIPLE입니다." << std::endl;
+			std::cout << ifCardIsRoyal(HP) << " TRIPLE" << std::endl;
 			if (HP == 1)
 			{
 				HP = 14;
@@ -595,7 +590,7 @@ double Poker::checkNumRanking(int n[], std::string s[])
 		}
 		else
 		{
-			std::cout << HP << " TRIPLE입니다." << std::endl;
+			std::cout << HP << " TRIPLE" << std::endl;
 			attRatio = HP / 100.0 + 1.4;
 		}
 	}
@@ -604,9 +599,10 @@ double Poker::checkNumRanking(int n[], std::string s[])
 	
 }
 
-void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR)
+void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR, Player* player, Monster* monster, int stage)
 {
-	std::cout << "몬스터의 카드" << std::endl;
+	CursorControl cursor;
+	UIDesign ui;
 	MonsterDraw(5, c, u);
 	int playernum[5];
 	std::string playershape[5];
@@ -648,15 +644,22 @@ void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR)
 			Monstershape[i] = c[59 + i].GetShape();
 		}
 	}
-
 	CardSort(playernum, playershape);
 	CardSort(Monsternum, Monstershape);
-	std::cout << "몬스터는 ";
-	MAR = checkNumRanking(Monsternum, Monstershape);
+	BattleScene battle;
+	battle.PrintScene(player,monster, stage);
+	cursor.gotoxy(82, 17);
+	finalCards(Monsternum, Monstershape);
+	cursor.gotoxy(44, 17);
 	finalCards(playernum, playershape);
+	cursor.gotoxy(6, 23);
 	std::cout << "당신은 ";
 	PAR = checkNumRanking(playernum, playershape);
-	std::cout << std::endl;
+	std::cout << ",";
+	cursor.gotoxy(62, 23);
+	std::cout << "몬스터는 ";
+	MAR = checkNumRanking(Monsternum, Monstershape);
+	cursor.gotoxy(6, 25);
 	if (PAR > MAR)
 	{
 		std::cout << "플레이어가 승리하였습니다." << std::endl;
@@ -674,7 +677,6 @@ void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR)
 
 void Poker::finalCards(int n[],std::string s[])
 {
-	std::cout << "최종 카드" << std::endl;
 	for (int i = 0; i < 5; i++)
 	{
 		if (n[i] == 0)
@@ -683,27 +685,69 @@ void Poker::finalCards(int n[],std::string s[])
 		else
 		{
 			PrintCard(n,s,i);
-			std::cout << "	";
+			std::cout << " ";
 		}
 
 	}
 }
 
 
-double Poker::playPoker(double& MAR, double& PAR)
+double Poker::playPoker(double& MAR, double& PAR,Player* player,Monster* monster, int stage)
 {
+	CursorControl cursor;
+	UIDesign ui;
 	Poker cards[64];
 	cardSetting(cards);
-
 	//인게임, 카드 뽑기
 	int usecard = 0;
+	cursor.gotoxy(44, 17);
 	draw(4, cards, usecard);
 	std::cout<<std::endl;
+	cursor.gotoxy(6, 25);
 	chooseTrashCards(usecard, cards);
+	cursor.gotoxy(56, 17);
 	draw(2, cards, usecard);
-	std::cout << std::endl;
-	
-	evaluate(cards, usecard, MAR, PAR);
+	evaluate(cards, usecard, MAR, PAR, player,monster,stage);
+	return 0;
+}
+
+int Poker::printMenu()
+{
+	CursorControl cursor;
+	int choice = 0;
+	while (1)
+	{
+		int input;
+		if (_kbhit)
+		{
+			input = _getch();
+			switch (input)
+			{
+			case LEFT:
+				if (choice > 0)
+				{
+					choice--;
+				}
+				cursor.gotoxy(45 + 4 * choice + 4,18);
+				std::cout << "  ";
+				cursor.gotoxy(45 + 4 * choice,18);
+				std::cout << "＾";
+				break;
+			case RIGHT:
+				if (choice < 3)
+				{
+					choice++;
+				}
+				cursor.gotoxy(45 + 4 * choice - 4, 18);
+				std::cout << "  ";
+				cursor.gotoxy(45 + 4 * choice, 18);
+				std::cout << "＾";
+				break;
+			case SPACE:
+				return choice;
+			}
+		}
+	}
 	return 0;
 }
 

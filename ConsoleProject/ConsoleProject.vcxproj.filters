@@ -66,10 +66,10 @@
     <ClCompile Include="Game.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Choice.cpp">
+    <ClCompile Include="CursorControl.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CursorControl.cpp">
+    <ClCompile Include="UIDesign.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,10 +110,10 @@
     <ClInclude Include="Game.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Choice.h">
+    <ClInclude Include="CursorControl.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CursorControl.h">
+    <ClInclude Include="UIDesign.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,6 @@
 #include "Unit.h"
 
-Unit::Unit(string n, int h, int a, int m):name(n),Hp(h),Att(a),Money(m)
+Unit::Unit(string n, double h, int a, int m):name(n),Hp(h),Att(a),Money(m)
 {
 }
 
@@ -23,7 +23,7 @@ int Unit::GetHp()
 	return Hp;
 }
 
-void Unit::SetHp(int h)
+void Unit::SetHp(double h)
 {
 	Hp = h;
 }

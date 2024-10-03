@@ -3,12 +3,14 @@
 #include "StoreScene.h"
 #include "InventoryScene.h"
 #include "DungeonScene.h"
+#include "UIDesign.h"
 
 void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 {
 	while(1)
 	{
 		CursorControl cursor;
+		UIDesign ui;
 		PrintScene();
 		int choice=PrintMenu();
 		if (choice == 0)//switch문 사용 불가
@@ -22,16 +24,20 @@ void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 		}
 		else if (choice == 2)
 		{
-			DungeonScene dungeon;
-			dungeon.runScene(player);
+			ui.windowDesign();
+			cursor.gotoxy(48, 10);
+			std::cout << "던전에 입장하시겠습니까?";
+			int choice=ui.yesOrNoDesign();
+			if (choice == 0) 
+			{
+				DungeonScene dungeon;
+				dungeon.runScene(player);
+			}
 		}
 		else if (choice == 3)
 		{
-			delete player;
-			player= nullptr;
-			delete inventory;
-			inventory = nullptr;
-			return;
+			TitleScene title;
+			title.runScene(player,inventory);
 		}
 	}
 }
@@ -80,37 +86,10 @@ int LobbyScene::PrintMenu()
 
 void LobbyScene::PrintScene()
 {
+
 	CursorControl cursor;
-	cursor.gotoxy(0, 0);
-	std::cout << "                                                                                                                      " << std::endl;
-	std::cout << "  ■■■■■■■■■■■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■                  ■  ■                                                                                        ■  " << std::endl;
-	std::cout << "  ■■■■■■■■■■■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
-	std::cout << "                                                                                                                        " << std::endl;
-	std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■                                                                                                                ■  " << std::endl;
-	std::cout << "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  " << std::endl;
+	UIDesign ui;
+	ui.wholeDesign();
 	cursor.gotoxy(6, 3);
 	std::cout << "> 상점" << std::endl;
 	cursor.gotoxy(8, 5);

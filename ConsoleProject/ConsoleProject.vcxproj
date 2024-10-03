@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BattleScene.cpp" />
-    <ClCompile Include="Choice.cpp" />
     <ClCompile Include="DungeonScene.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="CursorControl.cpp" />
@@ -149,11 +148,11 @@
     <ClCompile Include="TitleScene.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="UIDesign.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleScene.h" />
-    <ClInclude Include="Choice.h" />
     <ClInclude Include="DungeonScene.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="CursorControl.h" />
@@ -167,6 +166,7 @@
     </ClInclude>
     <ClInclude Include="StoreScene.h" />
     <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="UIDesign.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

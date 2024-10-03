@@ -1,6 +1,7 @@
 #include<iostream>
 #pragma once
-
+#include "Monster.h"
+#include "Player.h"
 class Poker
 {
 private:
@@ -64,11 +65,11 @@ public:
 	double checkNumRanking(int n[],std::string s[]);
 
 	//족보 평가
-	void evaluate(Poker c[],int u, double& MAR, double& PAR);
+	void evaluate(Poker c[],int u, double& MAR, double& PAR,Player* player, Monster* monster, int stage);
 	
 	//포커 시작
-	double playPoker(double& MAR, double& PAR);
+	double playPoker(double& MAR, double& PAR, Player* player,Monster* moster, int stage);
 	
-	
+	int  printMenu();
 };
 

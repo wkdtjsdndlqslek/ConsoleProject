@@ -1,40 +1,52 @@
 #include "InventoryScene.h"
 #include"Item.h"
 #include "Player.h"
+#include "CursorControl.h"
+#include "UIDesign.h"
+#include"LobbyScene.h"
 
 void InventoryScene::runScene(Player* player, InventoryScene* inventory)
 {
-	displayGotItems(gotItems);
-	EquipOrUnEquip(player,inventory);
+	CursorControl cursor;
+	UIDesign ui;
+	while (1)
+	{
+		{
+			PrintScene();
+			if (gotItems.empty())
+			{
+				ui.windowDesign();
+				cursor.gotoxy(52, 10);
+				std::cout << "아이템이 없습니다.";
+				ui.checkDesign();
+				break;
+			}
+			else 
+			{
+				displayGotItems(gotItems);
+				EquipOrUnEquip(player, inventory);
+			}
+		}
+	}
 	
 }
 
-void InventoryScene::EquippingItem(Player* player)
+void InventoryScene::EquippingItem(Player* player, Item& item)
 {
-	std::cout << "장비할 아이템을 고르세요." << std::endl;
-	displayGotItems(gotItems);
-	if (gotItems.empty()){}
-	else {
-		int choice;
-		while (1)
-		{
-			std::cin >> choice;
-			if (choice >= 1 && choice <= gotItems.size())
-			{
-				Item& selectItem = gotItems[choice - 1];
-				player->EquippedItem(selectItem);
-				std::cout << "장착되었습니다." << std::endl;
-				selectItem.SetEquipped(1);
-				break;
-			}
-			else std::cout << "다시 입력해주세요." << std::endl;
-		}
-	}
+	UIDesign ui;
+	CursorControl cursor;
+	player->EquippedItem(item);
+	ui.windowDesign();
+	cursor.gotoxy(53, 10);
+	std::cout << "장착되었습니다." << std::endl;
+	ui.checkDesign();
+	item.SetEquipped(1);
+	
 }
 
-void InventoryScene::UnEquippingItem(Player* player,InventoryScene* inventory)
+void InventoryScene::UnEquippingItem(Player* player,InventoryScene* inventory,Item& item)
 {
-	player->checkEquippedItem(player,inventory);
+	player->checkEquippedItem(player,inventory,item);
 }
 
 void InventoryScene::GotItem(Item& item)
@@ -44,49 +56,116 @@ void InventoryScene::GotItem(Item& item)
 
 void InventoryScene::displayGotItems(const std::vector<Item>& gotItems)const
 {
-	if (gotItems.empty())
+	CursorControl cursor;
+	cursor.gotoxy(33, 3);
+	std::cout << ">";
+	for (int i = 0; i < gotItems.size(); i++)
 	{
-		std::cout << "장착 가능한 아이템 없음" << std::endl;
-		return;
-	}
-	else {
-		for (const auto& item : gotItems)
+		const Item& item = gotItems[i];
+		if (item.isEquipped(item) == 1)
 		{
-			int i = 1;
-			std::cout << i++ << ". ";
-			if (item.isEquipped(item)==1)
-			{
-				std::cout << "<장착중> ";
-			}
+			cursor.gotoxy(35, 3 + 2 * i);
+			std::cout << "<장착중> " << item.GetItemName() << " 공격력 : " << item.GetItemAtt() << std::endl;
+		}
+		else
+		{
+			cursor.gotoxy(35, 3 + 2 * i);
 			std::cout << item.GetItemName() << " 공격력 : " << item.GetItemAtt() << std::endl;
 		}
 	}
+	
 }
 
 void InventoryScene::EquipOrUnEquip(Player * player,InventoryScene* inventory)
 {
-	std::cout << "1.장비하기 2.탈착하기 3.로비" << std::endl;
-	int choice;
-	std::cin >> choice;
-	switch (choice)
+	int select = PrintMenu(player, inventory);
+	Item& item= gotItems[select];
+	if (item.isEquipped(item) == 0)
 	{
-	case 1:
-		EquippingItem(player);
-		break;
-	case 2:
-		UnEquippingItem(player, inventory);
-		break;
-	case 3:
-		return;
+		EquippingItem(player, item);
+	}
+	else
+	{
+		UnEquippingItem(player, inventory,item);
+	}
+	
+}
+
+void InventoryScene::UnEquippedDisplayItem(Player* player, Item& item)//private인 멤버변수 gotItems에 접근하기 위한 함수
+{
+	UIDesign ui;
+	CursorControl cursor;
+	player->UnEquippedItem(item);
+	item.SetEquipped(0);
+	ui.windowDesign();
+	cursor.gotoxy(53, 10);
+	std::cout << "탈착되었습니다." << std::endl;
+	ui.checkDesign();	
+}
+
+int InventoryScene::PrintMenu(Player* player, InventoryScene* inventory)
+{
+	CursorControl cursor;
+	int choice=0;
+	while (1)
+	{
+		int input;
+		if (_kbhit())
+		{
+			input = _getch();
+			switch (input)
+			{
+			case UP:
+				if (choice > 0)
+				{
+					choice--;
+				}
+				cursor.gotoxy(33, 3 + 2 * choice + 2);
+				std::cout << " ";
+				cursor.gotoxy(33, 3 + 2 * choice);
+				std::cout << ">";
+				break;
+			case DOWN:
+				if (choice < gotItems.size()-1)
+				{
+					choice++;
+				}
+				cursor.gotoxy(33, 3 + 2 * choice - 2);
+				std::cout << " ";
+				cursor.gotoxy(33, 3 + 2 * choice);
+				std::cout << ">";
+				break;
+			case LEFT:
+				LobbyScene lobby;
+				lobby.runScene(player, inventory);
+				break;
+			case SPACE:
+				return choice;
+			}
+		}
 	}
 }
 
-void InventoryScene::UnEquippedDisplayItem(Player* player, int choice)//private인 멤버변수 gotItems에 접근하기 위한 함수
+void InventoryScene::PrintScene()
 {
-	Item& selectItem = gotItems[choice - 1];
-	player->UnEquippedItem(selectItem);
-	std::cout << "탈착되었습니다." << std::endl;
-	selectItem.SetEquipped(0);
+	CursorControl cursor;
+	UIDesign ui;
+	cursor.gotoxy(0, 0);
+	ui.wholeDesign();
+	cursor.gotoxy(8, 3);
+	std::cout << "상점" << std::endl;
+	cursor.gotoxy(6, 5);
+	std::cout << "> 인벤토리" << std::endl;
+	cursor.gotoxy(8, 7);
+	std::cout << "던전" << std::endl;
+	cursor.gotoxy(8, 9);
+	std::cout << "타이틀" << std::endl;
+	displayGotItems(gotItems);
 }
 
-
+int InventoryScene::GetGotItemsSize()
+{
+	UIDesign ui;
+	CursorControl cursor;
+	return gotItems.size();
+}

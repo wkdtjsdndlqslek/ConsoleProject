@@ -6,17 +6,17 @@ class Unit
 {
 protected:
 	string name;
-	int Hp;
+	double Hp;
 	int Att;
 	int Money;
 public:
-	Unit(string n, int h, int a, int m);
+	Unit(string n, double h, int a, int m);
 	~Unit();
 public:
 	string GetName();
 	void SetName(string n);
 	int GetHp();
-	void SetHp(int h);
+	void SetHp(double h);
 	int GetAtt();
 	void SetAtt(int a);
 	int GetMoney();

@@ -14,6 +14,7 @@ class TitleScene
 public:
 	void PrintScene(int num);
 	void runScene();
+	void runScene(Player* player, InventoryScene* inventory);
 	int PrintMenu();
 };
 

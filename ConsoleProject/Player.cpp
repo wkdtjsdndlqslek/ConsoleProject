@@ -2,8 +2,9 @@
 #include "Unit.h"
 #include "Item.h"
 #include "InventoryScene.h"
+#include "UIDesign.h"
 
-Player::Player():Unit("플레이어", 1000, 20, 100)
+Player::Player():Unit("플레이어", 1000, 20, 10000)
 {
 	std::cout << "플레이어 이름을 입력하세요. : ";
 	string playerName;
@@ -30,7 +31,7 @@ void Player::EquippedItem(Item& item)
 void Player::UnEquippedItem(Item& item)
 {
 	equippedItems.pop_back();
-	Att += item.GetItemAtt();
+	Att -= item.GetItemAtt();
 }
 
 void Player::displayEquippedItems(const std::vector<Item>& equippedItems)
@@ -43,30 +44,9 @@ void Player::displayEquippedItems(const std::vector<Item>& equippedItems)
 		}
 	}
 
-void Player::checkEquippedItem(Player* player, InventoryScene* inventory)
+void Player::checkEquippedItem(Player* player, InventoryScene* inventory, Item& item)
 {
-	if (equippedItems.empty())
-	{
-		std::cout << "장착한 아이템이 없습니다." << std::endl;
-	}
-	else
-	{
-		int choice;
-		while (1)
-		{
-			std::cout << "<장착중> ";
-			displayEquippedItems(equippedItems);
-			std::cin >> choice;
-			if (choice == 1)
-			{
-				inventory->UnEquippedDisplayItem(player, choice);
-				break;
-			}
-			else
-			{
-				std::cout << "다시 입력해주세요." << std::endl;
-			}
-		}
-	}
+	inventory->UnEquippedDisplayItem(player, item);
 }
+
 

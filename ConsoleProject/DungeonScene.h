@@ -9,8 +9,7 @@ class DungeonScene
 {
 private:
 public:
-	DungeonScene();
-public:
 	void runScene(Player* player);
+	void PrintScene(int stage);
 };
 

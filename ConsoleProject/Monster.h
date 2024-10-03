@@ -4,7 +4,7 @@
 class Monster:public Unit
 {
 public:
-	Monster(std::string n, int h, int a, int m);
+	Monster(std::string n, double h, int a, int m);
 
 };
 
