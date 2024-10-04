@@ -17,7 +17,7 @@ void DungeonScene::runScene(Player* player)
 		Monster* monster;
 		monster =new Monster("고블린", stage*100.0, 10 + stage, stage*100);
 		BattleScene b;
-		b.runScene(player, monster,stage);
+		if (b.runScene(player, monster, stage) == 0)break;
 		delete monster;ui.windowDesign();
 		cursor.gotoxy(53, 10);
 		std::cout << "다음 스테이지로";

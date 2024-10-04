@@ -5,7 +5,7 @@
 #include "UIDesign.h"
 #include "DungeonScene.h"
 
-void BattleScene::runScene(Player* player, Monster* monster, int stage)
+int BattleScene::runScene(Player* player, Monster* monster, int stage)
 {
 	CursorControl cursor;
 	UIDesign ui;
@@ -55,7 +55,12 @@ void BattleScene::runScene(Player* player, Monster* monster, int stage)
 			player->SetMoney(player->GetMoney() - monster->GetMoney());
 			std::cout << "보유 골드 : " << player->GetMoney() << std::endl;
 			ui.checkDesign();
-			break;
+			ui.windowDesign();
+			cursor.gotoxy(52,10);
+			std::cout << "로비로 이동합니다.";
+			ui.checkDesign();
+			player->SetHp(1000);
+			return 0;
 		}
 		else if (monster->GetHp() <= 0)
 		{
