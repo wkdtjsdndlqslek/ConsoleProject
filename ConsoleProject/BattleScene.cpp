@@ -111,7 +111,7 @@ void BattleScene::PrintPlayer(Player* player)
 {
 	{
 		CursorControl cursor;
-		cursor.gotoxy(52, 8);
+		cursor.gotoxy(51, 8);
 		std::cout << player->GetName();
 		cursor.gotoxy(51, 9);
 		std::cout << "///////";

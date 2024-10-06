@@ -142,6 +142,8 @@ int StoreScene::PrintMenu(Player* player,InventoryScene* inventory)
 				lobby.runScene(player, inventory);
 			case SPACE:
 				return choice;
+			case ENTER:
+				return choice;
 			}
 		}
 	}

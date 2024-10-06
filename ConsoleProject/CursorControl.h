@@ -7,6 +7,7 @@
 #define RIGHT 77
 #define LEFT 75
 #define SPACE 32
+#define ENTER 13
 
 class CursorControl
 {

@@ -191,7 +191,7 @@ public:
 					cursor.gotoxy(61, 13);
 					std::cout << ">";
 					break;
-				case SPACE:
+				case ENTER:
 					return choice;
 				}
 			}
@@ -213,7 +213,7 @@ public:
 			if (_kbhit())
 			{
 				input = _getch();
-				if (input == SPACE) break;
+				if (input == ENTER) break;
 			}
 		}
 	}

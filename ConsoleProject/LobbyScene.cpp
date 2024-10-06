@@ -77,7 +77,11 @@ int LobbyScene::PrintMenu()
 				cursor.gotoxy(x, y + 2*choice);
 				std::cout << ">" << std::endl;
 				break;
+			case RIGHT:
+				return choice;
 			case SPACE:
+				return choice;
+			case ENTER:
 				return choice;
 			}
 		}

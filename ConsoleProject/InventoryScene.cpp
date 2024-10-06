@@ -141,6 +141,8 @@ int InventoryScene::PrintMenu(Player* player, InventoryScene* inventory)
 				break;
 			case SPACE:
 				return choice;
+			case ENTER:
+				return choice;
 			}
 		}
 	}

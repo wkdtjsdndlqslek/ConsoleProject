@@ -94,6 +94,8 @@ int TitleScene::PrintMenu()
 				break;
 			case SPACE:
 				return choice;
+			case ENTER:
+				return choice;
 			}
 		}
 	}
