@@ -5,71 +5,69 @@
 class Poker
 {
 private:
-
-	std::string Shape;
-	int shapeNumber;
-	int Number;
+    std::string Shape;
+    int shapeNumber;
+    int Number;
 
 public:
-	//1~~52ÀåÀÇ Ä«µå ¼³Á¤
-	void SetshapeNumber(int sn);
+    //1~52ê¹Œì§€ ì¹´ë“œ ì„¤ì •
+    void SetshapeNumber(int sn);
 
-	//¹®¾ç¼³Á¤
-	void SetShape(int s);
+    //ëª¨ì–‘ì„¤ì •
+    void SetShape(int s);
 
-	//¼ıÀÚ¼³Á¤
-	void SetNumber(int n);
+    //ìˆ«ìì„¤ì •
+    void SetNumber(int n);
 
-	std::string GetShape();
+    std::string GetShape();
 
-	int GetshapeNumber();
+    int GetshapeNumber();
 
-	int GetNumber();
+    int GetNumber();
 
-	//Ä«µå ¼ıÀÚÅ©±â·Î Á¤·Ä
-	void CardSort(int n[],std::string s[]);
+    //ì¹´ë“œ í¬ê¸°ìˆœìœ¼ë¡œ ì •ë ¬
+    void CardSort(int n[], std::string s[]);
 
-	//Ä«µå ÃÊ±âÈ­ ¹× ¼ÅÇÃ
-	void cardSetting(Poker c[]);
+    //ì¹´ë“œ ì´ˆê¸°í™” ë° ì„ê¸°
+    void cardSetting(Poker c[]);
 
-	// ¸ó½ºÅÍ Ä«µå »Ì±â
-	void MonsterDraw(int n, Poker c[], int& u);
+    // ëª¬ìŠ¤í„° ì¹´ë“œ ë½‘ê¸°
+    void MonsterDraw(int n, Poker c[], int& u);
 
-	// Ä«µå nÀå »Ì±â
-	void draw(int n, Poker c[], int& u);
+    // ì¹´ë“œ nì¥ ë½‘ê¸°
+    void draw(int n, Poker c[], int& u);
 
-	//¹ö¸± Ä«µå º¸¿©ÁÖ±â
-	void chooseCards(int u, Poker c[]);
+    //ê°€ì§„ ì¹´ë“œ ë³´ì—¬ì£¼ê¸°
+    void chooseCards(int u, Poker c[]);
 
-	////¹ö¸± Ä«µå »Ì±â
-	void chooseTrashCards(int u, Poker c[]);
-	
-	//Æä¾îÀÇ ³ôÀº ¼ıÀÚ°¡ ·Î¿­ÀÌ¶ó¸é
-	std::string ifCardIsRoyal(int h);
-	std::string ifCardIsRoyal(int n[]);
+    //ë²„ë¦´ ì¹´ë“œ ë½‘ê¸°
+    void chooseTrashCards(int u, Poker c[]);
 
-	//Ä«µå Ãâ·Â (ÇÔ¼ö ¿À¹ö·Îµù)
-	void PrintCard(int n[],std::string s[],int i);
-	void PrintCard(Poker c[], int num);
+    //ê°€ì§€ê³  ìˆëŠ” ìˆ«ìê°€ ë¡œì–„ì´ë¼ë©´
+    std::string ifCardIsRoyal(int h);
+    std::string ifCardIsRoyal(int n[]);
 
-	//ÃÖÁ¾ Ä«µå Ãâ·Â
-	void finalCards(int n[], std::string s[]);
+    //ì¹´ë“œ ì¶œë ¥ (í•¨ìˆ˜ ì˜¤ë²„ë¡œë”©)
+    void PrintCard(int n[], std::string s[], int i);
+    void PrintCard(Poker c[], int num);
 
-	//Æä¾î È®ÀÎ
-	void CheckPair(int n[], std::string s[],int cphp[]);
+    //ìµœì¢… ì¹´ë“œ ì¶œë ¥
+    void finalCards(int n[], std::string s[]);
 
-	//Å¾, ½ºÆ®·¹ÀÌÆ®, ÇÃ·¯½¬ È®ÀÎ
-	int CheckTopStrateFlush(int n[], std::string s[]);
+    //í˜ì–´ í™•ì¸
+    void CheckPair(int n[], std::string s[], int cphp[]);
 
-	//Á·º¸ ÆÇº° ÈÄ °ø°İ·Â °è¼ö ¼³Á¤
-	double checkNumRanking(int n[],std::string s[]);
+    //íƒ‘, ìŠ¤íŠ¸ë ˆì´íŠ¸, í”ŒëŸ¬ì‹œ í™•ì¸
+    int CheckTopStrateFlush(int n[], std::string s[]);
 
-	//Á·º¸ Æò°¡
-	void evaluate(Poker c[],int u, double& MAR, double& PAR,Player* player, Monster* monster, int stage);
-	
-	//Æ÷Ä¿ ½ÃÀÛ
-	double playPoker(double& MAR, double& PAR, Player* player,Monster* moster, int stage);
-	
-	int  printMenu();
+    //ì¡±ë³´ íŒë³„ ë° ê³µê²©ë ¥ ë°°ìœ¨ ì„¤ì •
+    double checkNumRanking(int n[], std::string s[]);
+
+    //ê²°ê³¼ ê°’
+    void evaluate(Poker c[], int u, double& MAR, double& PAR, Player* player, Monster* monster, int stage);
+
+    //í¬ì»¤ ì‹¤í–‰
+    double playPoker(double& MAR, double& PAR, Player* player, Monster* moster, int stage);
+
+    int  printMenu();
 };
-

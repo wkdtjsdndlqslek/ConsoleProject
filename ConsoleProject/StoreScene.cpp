@@ -1,7 +1,7 @@
 #include "StoreScene.h"
-#include"Item.h"
-#include"Player.h"
-#include"Game.h"
+#include "Item.h"
+#include "Player.h"
+#include "Game.h"
 #include "InventoryScene.h"
 #include "LobbyScene.h"
 #include "CursorControl.h"
@@ -9,159 +9,156 @@
 
 void StoreScene::runScene(Player* player, InventoryScene* inventory)
 {
-	while (1)
-	{
-		CursorControl cursor;
-		PrintScene();
-		cursor.gotoxy(33, 3);
-		std::cout << ">";
-		storeInformation(player, inventory);
-	}
+    while (1)
+    {
+        CursorControl cursor;
+        PrintScene();
+        cursor.gotoxy(33, 3);
+        std::cout << ">";
+        storeInformation(player, inventory);
+    }
 }
 
 StoreScene::StoreScene()
 {
-	sellingItems.push_back(Item("Á¾ÀÌ Ä«µå", 10, 100));
-	sellingItems.push_back(Item("À¯Èñ¿Õ Ä«µå", 20, 500));
-	sellingItems.push_back(Item("³ª¹« Ä«µå", 30, 1000));
-	sellingItems.push_back(Item("Â¯µ¹ Ä«µå", 100, 5000));
-	sellingItems.push_back(Item("Ã»µ¿ Ä«µå", 200, 10000));
-	sellingItems.push_back(Item("°­Ã¶ Ä«µå", 1000, 100000));
-	sellingItems.push_back(Item("±İ°­¼® Ä«µå", 10000, 1000000));
+    sellingItems.push_back(Item("ë‚˜ë¬´ ì¹´ë“œ", 10, 100));
+    sellingItems.push_back(Item("ëŒ€ë‚˜ë¬´ ì¹´ë“œ", 20, 500));
+    sellingItems.push_back(Item("ëŒë©©ì´ ì¹´ë“œ", 30, 1000));
+    sellingItems.push_back(Item("ì¥ë‚œê° ì¹´ë“œ", 100, 5000));
+    sellingItems.push_back(Item("ì²­ë™ ì¹´ë“œ", 200, 10000));
+    sellingItems.push_back(Item("ê°•ì²  ì¹´ë“œ", 1000, 100000));
+    sellingItems.push_back(Item("ë‹¤ì´ì•„ ì¹´ë“œ", 10000, 1000000));
 }
 
 void StoreScene::displaySellingItems(const std::vector<Item>& sellingItems) const
 {
-	CursorControl cursor;
-	for (int i=0;i<sellingItems.size();++i)
-	{
-		cursor.gotoxy(33, 3);
-		std::cout << ">";
-		cursor.gotoxy(35, 3+2*i);
-		const Item& item = sellingItems[i];
-		std::cout << item.GetItemName() << "		°ø°İ·Â : " << item.GetItemAtt() << "		°¡°İ : " << item.GetPrice() << std::endl;
-		std::cout << std::endl;
-	}
+    CursorControl cursor;
+    for (int i = 0;i < sellingItems.size();++i)
+    {
+        cursor.gotoxy(33, 3);
+        std::cout << ">";
+        cursor.gotoxy(35, 3 + 2 * i);
+        const Item& item = sellingItems[i];
+        std::cout << item.GetItemName() << "        ê³µê²©ë ¥ : " << item.GetItemAtt() << "        ê°€ê²© : " << item.GetPrice() << std::endl;
+        std::cout << std::endl;
+    }
 }
 
 void StoreScene::storeInformation(Player* player, InventoryScene* inventory)
 {
-	CursorControl cursor;
-	cursor.gotoxy(6, 23);
-	std::cout << "º¸À¯ °ñµå " << player->GetMoney();
-	buyItem(player, inventory);
+    CursorControl cursor;
+    cursor.gotoxy(6, 23);
+    std::cout << "í˜„ì¬ ê³¨ë“œ " << player->GetMoney();
+    buyItem(player, inventory);
 }
 
-void StoreScene::buyCheck(Player* player, InventoryScene* inventory,int item )
+void StoreScene::buyCheck(Player* player, InventoryScene* inventory, int item)
 {
-	CursorControl cursor;
-	UIDesign ui;
-	ui.windowDesign();
-	cursor.gotoxy(49, 10);
-	std::cout << "¹°°ÇÀ» ±¸¸ÅÇÏ½Ã°Ú½À´Ï±î?";
-	int select = ui.yesOrNoDesign();
-	if(inventory->GetGotItemsSize()==8)
-	{
-		ui.windowDesign();
-		cursor.gotoxy(49, 10);
-		std::cout << "ÀÎº¥Åä¸®°¡ °¡µæ Ã¡½À´Ï´Ù.";
-		ui.checkDesign();
-	}
-	else
-	{
-		switch (select)
-		{
-		case 0:
-			inventory->GotItem(sellingItems[item]);
-			player->SetMoney(player->GetMoney() - sellingItems[item].GetPrice());
-			ui.windowDesign();
-			cursor.gotoxy(57, 10);
-			std::cout << "±¸¸Å¿Ï·á " << std::endl;
-			ui.checkDesign();
-			break;
-		case 1:
-			break;
-		}
-	}
+    CursorControl cursor;
+    UIDesign ui;
+    ui.windowDesign();
+    cursor.gotoxy(49, 10);
+    std::cout << "ì•„ì´í…œì„ êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+    int select = ui.yesOrNoDesign();
+    if (inventory->GetGotItemsSize() == 8)
+    {
+        ui.windowDesign();
+        cursor.gotoxy(49, 10);
+        std::cout << "ì¸ë²¤í† ë¦¬ê°€ ê°€ë“ ì°¼ìŠµë‹ˆë‹¤.";
+        ui.checkDesign();
+    }
+    else
+    {
+        switch (select)
+        {
+        case 0:
+            inventory->GotItem(sellingItems[item]);
+            player->SetMoney(player->GetMoney() - sellingItems[item].GetPrice());
+            ui.windowDesign();
+            cursor.gotoxy(57, 10);
+            std::cout << "êµ¬ë§¤ì™„ë£Œ " << std::endl;
+            ui.checkDesign();
+            break;
+        case 1:
+            break;
+        }
+    }
 }
 
 void StoreScene::buyItem(Player* player, InventoryScene* inventory)
 {
-	
-	CursorControl cursor;
-	UIDesign ui;
-	int select = PrintMenu(player, inventory);
-	if (player->GetMoney() >= sellingItems[select].GetPrice())
-	{
-		buyCheck(player, inventory, select);
-	}
-	else if (player->GetMoney() < sellingItems[select].GetPrice())
-	{
-		ui.windowDesign();
-		cursor.gotoxy(51, 10);
-		std::cout << "±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù." << std::endl;
-		ui.checkDesign();
-	}
-	
+    CursorControl cursor;
+    UIDesign ui;
+    int select = PrintMenu(player, inventory);
+    if (player->GetMoney() >= sellingItems[select].GetPrice())
+    {
+        buyCheck(player, inventory, select);
+    }
+    else if (player->GetMoney() < sellingItems[select].GetPrice())
+    {
+        ui.windowDesign();
+        cursor.gotoxy(51, 10);
+        std::cout << "ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤." << std::endl;
+        ui.checkDesign();
+    }
 }
 
-int StoreScene::PrintMenu(Player* player,InventoryScene* inventory)
+int StoreScene::PrintMenu(Player* player, InventoryScene* inventory)
 {
-	CursorControl cursor;
-	int choice = 0;
-	while (1)
-	{
-		int input;
-		if (_kbhit())
-		{
-			input = _getch();
-			switch (input)
-			{
-			case UP:
-				if (choice > 0)
-				{
-					choice--;
-				}
-				cursor.gotoxy(33, 3 + 2 * choice + 2);
-				std::cout << " ";
-				cursor.gotoxy(33, 3 + 2 * choice);
-				std::cout << ">";
-				break;
-			case DOWN:
-				if (choice < 6)
-				{
-					choice++;
-				}
-				cursor.gotoxy(33, 3 + 2 * choice - 2);
-				std::cout << " ";
-				cursor.gotoxy(33, 3 + 2 * choice);
-				std::cout << ">";
-				break;
-			case LEFT:
-				LobbyScene lobby;
-				lobby.runScene(player, inventory);
-			case SPACE:
-				return choice;
-			case ENTER:
-				return choice;
-			}
-		}
-	}
+    CursorControl cursor;
+    int choice = 0;
+    while (1)
+    {
+        int input;
+        if (_kbhit())
+        {
+            input = _getch();
+            switch (input)
+            {
+            case UP:
+                if (choice > 0)
+                {
+                    choice--;
+                }
+                cursor.gotoxy(33, 3 + 2 * choice + 2);
+                std::cout << " ";
+                cursor.gotoxy(33, 3 + 2 * choice);
+                std::cout << ">";
+                break;
+            case DOWN:
+                if (choice < 6)
+                {
+                    choice++;
+                }
+                cursor.gotoxy(33, 3 + 2 * choice - 2);
+                std::cout << " ";
+                cursor.gotoxy(33, 3 + 2 * choice);
+                std::cout << ">";
+                break;
+            case LEFT:
+                LobbyScene lobby;
+                lobby.runScene(player, inventory);
+            case SPACE:
+                return choice;
+            case ENTER:
+                return choice;
+            }
+        }
+    }
 }
 
 void StoreScene::PrintScene()
 {
-	CursorControl cursor;
-	UIDesign ui;
-	ui.wholeDesign();
-	cursor.gotoxy(6, 3);
-	std::cout << "> »óÁ¡" << std::endl;
-	cursor.gotoxy(8, 5);
-	std::cout << "ÀÎº¥Åä¸®" << std::endl;
-	cursor.gotoxy(8, 7);
-	std::cout << "´øÀü" << std::endl;
-	cursor.gotoxy(8, 9);
-	std::cout << "Å¸ÀÌÆ²" << std::endl;
-	displaySellingItems(sellingItems);
-	
+    CursorControl cursor;
+    UIDesign ui;
+    ui.wholeDesign();
+    cursor.gotoxy(6, 3);
+    std::cout << "> ìƒì " << std::endl;
+    cursor.gotoxy(8, 5);
+    std::cout << "ì¸ë²¤í† ë¦¬" << std::endl;
+    cursor.gotoxy(8, 7);
+    std::cout << "ë˜ì „" << std::endl;
+    cursor.gotoxy(8, 9);
+    std::cout << "íƒ€ì´í‹€" << std::endl;
+    displaySellingItems(sellingItems);
 }

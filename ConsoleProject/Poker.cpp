@@ -6,749 +6,740 @@
 
 void Poker::SetshapeNumber(int sn)
 {
-	shapeNumber = sn;
+    shapeNumber = sn;
 }
 
 void Poker::SetShape(int s)
 {
-	if (s <= 13)
-	{
-		Shape = "¢¼";
-	}
-	else if (14 <= s && s <= 26)
-	{
-		Shape = "¡ß";
-	}
-	else if (27 <= s && s <= 39)
-	{
-		Shape = "¢¾";
-	}
-	else if (40 <= s && s <= 52)
-	{
-		Shape = "¢À";
-	}
+    if (s <= 13)
+    {
+        Shape = "â™ ";
+    }
+    else if (14 <= s && s <= 26)
+    {
+        Shape = "â—†";
+    }
+    else if (27 <= s && s <= 39)
+    {
+        Shape = "â™¥";
+    }
+    else if (40 <= s && s <= 52)
+    {
+        Shape = "â™£";
+    }
 }
 
 void Poker::SetNumber(int n)
 {
-	if (n <= 13)
-	{
-		Number = n;
-	}
-	else if (14 <= n && n <= 26)
-	{
-		Number = n - 13;
-	}
-	else if (27 <= n && n <= 39)
-	{
-		Number = n - 26;
-	}
-	else if (40 <= n && n <= 52)
-	{
-		Number = n - 39;
-	}
+    if (n <= 13)
+    {
+        Number = n;
+    }
+    else if (14 <= n && n <= 26)
+    {
+        Number = n - 13;
+    }
+    else if (27 <= n && n <= 39)
+    {
+        Number = n - 26;
+    }
+    else if (40 <= n && n <= 52)
+    {
+        Number = n - 39;
+    }
 }
 
 std::string Poker::GetShape()
 {
-	return Shape;
+    return Shape;
 }
 
 int Poker::GetshapeNumber()
 {
-	return shapeNumber;
+    return shapeNumber;
 }
 
 int Poker::GetNumber()
 {
-	return Number;
+    return Number;
 }
 
-void Poker::CardSort(int n[],std::string s[])
+void Poker::CardSort(int n[], std::string s[])
 {
-	
-	for (int i = 0; i < 5; i++)//ºñ±³ÇÏ´Â Ã¹¹øÂ° ¼ö
-	{
-		for (int k = 4; k > i; k--)//ºñ±³ÇÏ´Â µÎ¹øÂ° ¼ö
-		{
-			if (n[i] > n[k])
-			{
-				int temp;
-				temp = n[i];
-				n[i] = n[k];
-				n[k] = temp;
-				std::string shapeTemp;
-				shapeTemp = s[i];
-				s[i] = s[k];
-				s[k] = shapeTemp; 
-			}
-		}
-	}
+    for (int i = 0; i < 5; i++)//ë¹„êµí•˜ëŠ” ì²«ë²ˆì§¸ ìˆ˜
+    {
+        for (int k = 4; k > i; k--)//ë¹„êµí•˜ëŠ” ë‘ë²ˆì§¸ ìˆ˜
+        {
+            if (n[i] > n[k])
+            {
+                int temp;
+                temp = n[i];
+                n[i] = n[k];
+                n[k] = temp;
+                std::string shapeTemp;
+                shapeTemp = s[i];
+                s[i] = s[k];
+                s[k] = shapeTemp;
+            }
+        }
+    }
 }
 
 void Poker::draw(int n, Poker c[], int& u)
 {
-	for (int i = 0; i < n; i++)
-	{
-		c[53 + i + u].SetNumber(c[i + u].GetNumber());
-		c[53 + i + u].SetShape(c[i + u].GetshapeNumber());
-		if (c[i + u].GetNumber() == 1)
-		{
-			std::cout << c[i + u].GetShape() << "A";
-		}
-		else if (c[i + u].GetNumber() == 11)
-		{
-			std::cout << c[i + u].GetShape() << "J";
-		}
-		else if (c[i + u].GetNumber() == 12)
-		{
-			std::cout << c[i + u].GetShape() << "Q";
-		}
-		else if (c[i + u].GetNumber() == 13)
-		{
-			std::cout << c[i + u].GetShape() << "K";
-		}
-		else
-		{
-			std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
-		}
-		std::cout << " ";
-	}
-	std::cout << std::endl;
-	u += n;
+    for (int i = 0; i < n; i++)
+    {
+        c[53 + i + u].SetNumber(c[i + u].GetNumber());
+        c[53 + i + u].SetShape(c[i + u].GetshapeNumber());
+        if (c[i + u].GetNumber() == 1)
+        {
+            std::cout << c[i + u].GetShape() << "A";
+        }
+        else if (c[i + u].GetNumber() == 11)
+        {
+            std::cout << c[i + u].GetShape() << "J";
+        }
+        else if (c[i + u].GetNumber() == 12)
+        {
+            std::cout << c[i + u].GetShape() << "Q";
+        }
+        else if (c[i + u].GetNumber() == 13)
+        {
+            std::cout << c[i + u].GetShape() << "K";
+        }
+        else
+        {
+            std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
+        }
+        std::cout << " ";
+    }
+    std::cout << std::endl;
+    u += n;
 }
 
 void Poker::MonsterDraw(int n, Poker c[], int& u)
 {
-	for (int i = 0; i < n; i++)
-	{
-		c[53 + i + u].SetNumber(c[i + u].GetNumber());
-		c[53 + i + u].SetShape(c[i + u].GetshapeNumber());
-		if (c[i + u].GetNumber() == 1)
-		{
-			std::cout << c[i + u].GetShape() << "A";
-		}
-		else if (c[i + u].GetNumber() == 11)
-		{
-			std::cout << c[i + u].GetShape() << "J";
-		}
-		else if (c[i + u].GetNumber() == 12)
-		{
-			std::cout << c[i + u].GetShape() << "Q";
-		}
-		else if (c[i + u].GetNumber() == 13)
-		{
-			std::cout << c[i + u].GetShape() << "K";
-		}
-		else
-		{
-			std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
-		}
-		std::cout << " ";
-	}
-	u += n;
+    for (int i = 0; i < n; i++)
+    {
+        c[53 + i + u].SetNumber(c[i + u].GetNumber());
+        c[53 + i + u].SetShape(c[i + u].GetshapeNumber());
+        if (c[i + u].GetNumber() == 1)
+        {
+            std::cout << c[i + u].GetShape() << "A";
+        }
+        else if (c[i + u].GetNumber() == 11)
+        {
+            std::cout << c[i + u].GetShape() << "J";
+        }
+        else if (c[i + u].GetNumber() == 12)
+        {
+            std::cout << c[i + u].GetShape() << "Q";
+        }
+        else if (c[i + u].GetNumber() == 13)
+        {
+            std::cout << c[i + u].GetShape() << "K";
+        }
+        else
+        {
+            std::cout << c[i + u].GetShape() << c[i + u].GetNumber();
+        }
+        std::cout << " ";
+    }
+    u += n;
 }
 
 void Poker::chooseCards(int u, Poker c[])
 {
-	for (int i = 0; i < u; i++)
-	{
-		std::cout << i + 1 << ". ";
+    for (int i = 0; i < u; i++)
+    {
+        std::cout << i + 1 << ". ";
 
-		if (c[53 + i].GetNumber() == 1)
-		{
-			std::cout << c[53 + i].GetShape() << "A";
-		}
-		else if (c[53 + i].GetNumber() == 11)
-		{
-			std::cout << c[53 + i].GetShape() << "J";
-		}
-		else if (c[53 + i].GetNumber() == 12)
-		{
-			std::cout << c[53 + i].GetShape() << "Q";
-		}
-		else if (c[53 + i].GetNumber() == 13)
-		{
-			std::cout << c[53 + i].GetShape() << "K";
-		}
-		else
-		{
-			std::cout << c[53 + i].GetShape() << c[53 + i].GetNumber();
-		}
-		std::cout << "		";
-	}
+        if (c[53 + i].GetNumber() == 1)
+        {
+            std::cout << c[53 + i].GetShape() << "A";
+        }
+        else if (c[53 + i].GetNumber() == 11)
+        {
+            std::cout << c[53 + i].GetShape() << "J";
+        }
+        else if (c[53 + i].GetNumber() == 12)
+        {
+            std::cout << c[53 + i].GetShape() << "Q";
+        }
+        else if (c[53 + i].GetNumber() == 13)
+        {
+            std::cout << c[53 + i].GetShape() << "K";
+        }
+        else
+        {
+            std::cout << c[53 + i].GetShape() << c[53 + i].GetNumber();
+        }
+        std::cout << "        ";
+    }
 }
 
 void Poker::cardSetting(Poker c[])
 {
-	//52Àå ÃÊ±âÈ­
+    //52ì¥ ì´ˆê¸°í™”
+    for (int i = 0; i < 52; i++)
+    {
+        c[i].SetshapeNumber(i + 1);
+    }
 
-	for (int i = 0; i < 52; i++)
-	{
-		c[i].SetshapeNumber(i + 1);
-	}
+    //ì¹´ë“œ ì„ê¸°
+    int temp, soar, dest;
+    std::srand(time(NULL));
+    for (int i = 0; i < 1000; i++)
+    {
+        soar = rand() % 52;
+        dest = rand() % 52;
+        temp = c[soar].GetshapeNumber();
+        c[soar].SetshapeNumber(c[dest].GetshapeNumber());
+        c[dest].SetshapeNumber(temp);
+    }
 
-	//Ä«µå ¼ÅÇÃ
-	int temp, soar, dest;
-	std::srand(time(NULL));
-	for (int i = 0; i < 1000; i++)
-	{
-		soar = rand() % 52;
-		dest = rand() % 52;
-		temp = c[soar].GetshapeNumber();
-		c[soar].SetshapeNumber(c[dest].GetshapeNumber());
-		c[dest].SetshapeNumber(temp);
-	}
-
-	//¹®¾ç ¼ıÀÚ ³Ö±â
-	for (int i = 0; i < 52; i++)
-	{
-		c[i].SetShape(c[i].GetshapeNumber());
-		c[i].SetNumber(c[i].GetshapeNumber());
-	}
+    //ëª¨ì–‘ ìˆ«ì ì£¼ê¸°
+    for (int i = 0; i < 52; i++)
+    {
+        c[i].SetShape(c[i].GetshapeNumber());
+        c[i].SetNumber(c[i].GetshapeNumber());
+    }
 }
 
-void Poker::PrintCard(int n[],std::string s[],int i)
+void Poker::PrintCard(int n[], std::string s[], int i)
 {
-	if (n[i] == 1)
-	{
-		std::cout << s[i] << "A";
-	}
-	else if (n[i] == 11)
-	{
-		std::cout << s[i] << "J";
-	}
-	else if (n[i] == 12)
-	{
-		std::cout << s[i] << "Q";
-	}
-	else if (n[i] == 13)
-	{
-		std::cout << s[i] << "K";
-	}
-	else
-	{
-		std::cout << s[i] << n[i];
-	}
+    if (n[i] == 1)
+    {
+        std::cout << s[i] << "A";
+    }
+    else if (n[i] == 11)
+    {
+        std::cout << s[i] << "J";
+    }
+    else if (n[i] == 12)
+    {
+        std::cout << s[i] << "Q";
+    }
+    else if (n[i] == 13)
+    {
+        std::cout << s[i] << "K";
+    }
+    else
+    {
+        std::cout << s[i] << n[i];
+    }
 }
 
 void Poker::PrintCard(Poker c[], int num)
 {
-	if (c[num].GetNumber() == 1)
-	{
-		std::cout << c[num].GetShape() << "A";
-	}
-	else if (c[num].GetNumber() == 11)
-	{
-		std::cout << c[num].GetShape() << "J";
-	}
-	else if (c[num].GetNumber() == 12)
-	{
-		std::cout << c[num].GetShape() << "Q";
-	}
-	else if (c[num].GetNumber() == 13)
-	{
-		std::cout << c[num].GetShape() << "K";
-	}
-	else
-	{
-		std::cout << c[num].GetShape() << c[num].GetNumber();
-	}
+    if (c[num].GetNumber() == 1)
+    {
+        std::cout << c[num].GetShape() << "A";
+    }
+    else if (c[num].GetNumber() == 11)
+    {
+        std::cout << c[num].GetShape() << "J";
+    }
+    else if (c[num].GetNumber() == 12)
+    {
+        std::cout << c[num].GetShape() << "Q";
+    }
+    else if (c[num].GetNumber() == 13)
+    {
+        std::cout << c[num].GetShape() << "K";
+    }
+    else
+    {
+        std::cout << c[num].GetShape() << c[num].GetNumber();
+    }
 }
 
 void Poker::chooseTrashCards(int u, Poker c[])
 {
-	CursorControl cursor;
-	UIDesign ui;
-	ui.onlyBottomDesign();
-	cursor.gotoxy(6, 23);
-	std::cout << "¹ö¸± Ä«µå¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä." << std::endl;
-	cursor.gotoxy(45, 18);
-	std::cout << "£Ş";
-	int throwCard = printMenu();
-	ui.onlyBottomDesign();
-	cursor.gotoxy(6,23);
-	switch (throwCard)
-	{
-	case 0:
-		PrintCard(c, 53);
-		std::cout << "¸¦ ¹ö¸®¼Ì½À´Ï´Ù." << std::endl;
-		c[53].SetNumber(0);
-		break;
-	case 1:
-		PrintCard(c, 54);
-		std::cout << "¸¦ ¹ö¸®¼Ì½À´Ï´Ù." << std::endl;
-		c[54].SetNumber(0);
-		break;
-	case 2:
-		PrintCard(c, 55);
-		std::cout << "¸¦ ¹ö¸®¼Ì½À´Ï´Ù." << std::endl;
-		c[55].SetNumber(0);
-		break;
-	case 3:
-		PrintCard(c, 56);
-		std::cout << "¸¦ ¹ö¸®¼Ì½À´Ï´Ù." << std::endl;
-		c[56].SetNumber(0);
-		break;
-	}
-	
+    CursorControl cursor;
+    UIDesign ui;
+    ui.onlyBottomDesign();
+    cursor.gotoxy(6, 23);
+    std::cout << "ë²„ë¦´ ì¹´ë“œë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”." << std::endl;
+    cursor.gotoxy(45, 18);
+    std::cout << "â–¶";
+    int throwCard = printMenu();
+    ui.onlyBottomDesign();
+    cursor.gotoxy(6, 23);
+    switch (throwCard)
+    {
+    case 0:
+        PrintCard(c, 53);
+        std::cout << "ë¥¼ ë²„ë ¸ìŠµë‹ˆë‹¤." << std::endl;
+        c[53].SetNumber(0);
+        break;
+    case 1:
+        PrintCard(c, 54);
+        std::cout << "ë¥¼ ë²„ë ¸ìŠµë‹ˆë‹¤." << std::endl;
+        c[54].SetNumber(0);
+        break;
+    case 2:
+        PrintCard(c, 55);
+        std::cout << "ë¥¼ ë²„ë ¸ìŠµë‹ˆë‹¤." << std::endl;
+        c[55].SetNumber(0);
+        break;
+    case 3:
+        PrintCard(c, 56);
+        std::cout << "ë¥¼ ë²„ë ¸ìŠµë‹ˆë‹¤." << std::endl;
+        c[56].SetNumber(0);
+        break;
+    }
 }
 
 std::string Poker::ifCardIsRoyal(int h)
 {
-	std::string royal;
-	if (h == 1)
-	{
-		royal = "A";
-	}
-	else if (h == 11)
-	{
-		royal = "J";
-	}
-	else if (h == 12)
-	{
-		royal = "Q";
-	}
-	else if (h == 13)
-	{
-		royal = "K";
-	}
-	return royal;
+    std::string royal;
+    if (h == 1)
+    {
+        royal = "A";
+    }
+    else if (h == 11)
+    {
+        royal = "J";
+    }
+    else if (h == 12)
+    {
+        royal = "Q";
+    }
+    else if (h == 13)
+    {
+        royal = "K";
+    }
+    return royal;
 }
+
 std::string Poker::ifCardIsRoyal(int n[])
 {
-	std::string royal;
-	if ( n[0] == 1)
-	{
-		royal = "A";
-	}
-	else if (n[4] == 11)
-	{
-		royal = "J";
-	}
-	else if (n[4] == 12)
-	{
-		royal = "Q";
-	}
-	else if (n[4] == 13)
-	{
-		royal = "K";
-	}
-	return royal;
+    std::string royal;
+    if (n[0] == 1)
+    {
+        royal = "A";
+    }
+    else if (n[4] == 11)
+    {
+        royal = "J";
+    }
+    else if (n[4] == 12)
+    {
+        royal = "Q";
+    }
+    else if (n[4] == 13)
+    {
+        royal = "K";
+    }
+    return royal;
 }
 
-
-
-void Poker::CheckPair(int n[], std::string s[],int cphp[])
+void Poker::CheckPair(int n[], std::string s[], int cphp[])
 {
-	int checkPair = 0;
-	int highPair=0;
-	int triple = 0;
-	for (int i = 0; i < 5; i++)//ºñ±³ÇÏ´Â Ã¹¹øÂ° ¼ö
-	{
-		for (int k = 4; k > i; k--)//ºñ±³ÇÏ´Â µÎ¹øÂ° ¼ö
-		{
-			if (n[i] == n[k])
-			{
-				checkPair++;
-				highPair = n[i];
-			}
-		}
-		if (checkPair == 3)
-		{
-			triple = n[i];
-		}
-		if (n[0] == n[1] && n[0] == 1)
-		{
-			highPair = 1;
-		}
-	}
-	cphp[0] = checkPair;
-	cphp[1] = highPair;
-	cphp[2] = triple;
+    int checkPair = 0;
+    int highPair = 0;
+    int triple = 0;
+    for (int i = 0; i < 5; i++)//ë¹„êµí•˜ëŠ” ì²«ë²ˆì§¸ ìˆ˜
+    {
+        for (int k = 4; k > i; k--)//ë¹„êµí•˜ëŠ” ë‘ë²ˆì§¸ ìˆ˜
+        {
+            if (n[i] == n[k])
+            {
+                checkPair++;
+                highPair = n[i];
+            }
+        }
+        if (checkPair == 3)
+        {
+            triple = n[i];
+        }
+        if (n[0] == n[1] && n[0] == 1)
+        {
+            highPair = 1;
+        }
+    }
+    cphp[0] = checkPair;
+    cphp[1] = highPair;
+    cphp[2] = triple;
 }
 
-int Poker::CheckTopStrateFlush(int n[],std::string s[])
+int Poker::CheckTopStrateFlush(int n[], std::string s[])
 {
-	int checkTopStrateFlush = 0;
-	//ÇÃ·¯½¬ È®ÀÎ
-	if (s[0] == s[1] && s[1] == s[2] && s[2] == s[3] && s[3] == s[4])
-	{
-		checkTopStrateFlush++;
-	}
-	//½ºÆ®·¹ÀÌÆ® È®ÀÎ
-	if (n[4] == n[3] + 1 && n[3] == n[2] + 1 && n[2] == n[1] + 1 && n[1] == n[0] + 1)
-	{
-		checkTopStrateFlush += 2;
-	}
-	//·Î¿­ ½ºÆ®·¹ÀÌÆ® È®ÀÎ
-	if (n[0] == 1 && n[1] == 10 && n[2] == 11 && n[3] == 12 && n[4] == 13)
-	{
-		checkTopStrateFlush += 10;
-	}
-	return checkTopStrateFlush;
+    int checkTopStrateFlush = 0;
+    //í”ŒëŸ¬ì‹œ í™•ì¸
+    if (s[0] == s[1] && s[1] == s[2] && s[2] == s[3] && s[3] == s[4])
+    {
+        checkTopStrateFlush++;
+    }
+    //ìŠ¤íŠ¸ë ˆì´íŠ¸ í™•ì¸
+    if (n[4] == n[3] + 1 && n[3] == n[2] + 1 && n[2] == n[1] + 1 && n[1] == n[0] + 1)
+    {
+        checkTopStrateFlush += 2;
+    }
+    //ë¡œì–„ ìŠ¤íŠ¸ë ˆì´íŠ¸ í™•ì¸
+    if (n[0] == 1 && n[1] == 10 && n[2] == 11 && n[3] == 12 && n[4] == 13)
+    {
+        checkTopStrateFlush += 10;
+    }
+    return checkTopStrateFlush;
 }
 
 double Poker::checkNumRanking(int n[], std::string s[])
 {
-	int checkPairHighPair[3];//CheckPairÀÇ ¸®ÅÏ °ªÀ» ¼¼ °³ ¹Ş¾Æ¿À±â À§ÇØ ¸¸µç ¹è¿­
-	CheckPair(n,s,checkPairHighPair);
-	double attRatio=0.0f;//°ø°İ·Â °è¼ö
-	int CP = checkPairHighPair[0];
-	int HP = checkPairHighPair[1];//HP´Â Æä¾î Áß ³ôÀº ¼ıÀÚ
-	
-	int triple = checkPairHighPair[2];//tripleÀº Æ®¸®ÇÃÀÌ Æä¾îº¸´Ù ´õ ³·Àº ¼ıÀÚÀÇ Ç®ÇÏ¿ì½º°¡ ¶¹À» ¶§ Æä¾î°¡ ¾Æ´Ñ Æ®¸®ÇÃÀÇ ¼ıÀÚ¸¦ °¡Á®¿À±â À§ÇÔ.
-	if (CP == 4)//ÇÃ·¯½¬ º¸´Ù ¿ì¼± ¼øÀ§
-	{
-		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
-		{
-			std::cout << ifCardIsRoyal(triple) << " FULL HOUSE" << std::endl;
-			if (ifCardIsRoyal(triple) == "ACE")
-			{
-				triple = 14;
-				attRatio = triple / 100.0 + 2.0;
-			}
-			else
-			{
-				attRatio = triple / 100.0 + 2.0;
-			}
-		}
-		else
-		{
-			std::cout << triple << " FULL HOUSE" << std::endl;
-			attRatio = triple / 100.0 + 2.0;
-		}
-	}
-	else if (CP == 6)//ÇÃ·¯½¬ º¸´Ù ¿ì¼± ¼øÀ§
-	{
-		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
-		{
-			std::cout << ifCardIsRoyal(HP) << " FOUR CARD" << std::endl;
-			if (HP == 1)
-			{
-				HP = 14;
-				attRatio = HP / 100.0 + 2.5;
-			}
-			else
-			{
-				attRatio = HP / 100.0 + 2.5;
-			}
-		}
-		else
-		{
-			std::cout << HP << " FOUR CARD" << std::endl;
-			attRatio = HP / 100.0 + 2.5;
-		}
-	}
-	else if (CP ==0)
-	{	int CTSF = CheckTopStrateFlush(n, s);
-		if (CTSF == 1)
-		{
-			if (n[1] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
-			{
-				std::cout << ifCardIsRoyal(n) << " FLUSH" << std::endl;
-				if (n[0] == 1)
-				{
-					n[0] = 14;
-					attRatio = n[0] / 100.0 + 1.8;
-				}
-				else
-				{
-					attRatio = n[4] / 100.0 + 1.8;
-				}
-			}
-			else
-			{
-				std::cout << n[4] << " FLUSH" << std::endl;
-				attRatio = n[4] / 100.0 + 1.8;
-			}
-		}
-		else if (CTSF == 2)
-		{
-			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
-			{
-				std::cout << ifCardIsRoyal(n) << " STRATE" << std::endl;
-				if (n[0] == 1)
-				{
-					n[0] = 14;
-					attRatio = n[0] / 100.0 + 1.6;
-				}
-				else
-				{
-					attRatio = n[4] / 100.0 + 1.6;
-				}
-			}
-			else
-			{
-				std::cout << n[4] << " STRATE" << std::endl;
-				attRatio = n[4] / 100.0 + 1.6;
-			}
-		}
-		else if (CTSF == 3)
-		{
-			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
-			{
-				std::cout << ifCardIsRoyal(n) << " STRATE FLUSH" << std::endl;
-				if (n[0] == 1)
-				{
-					n[0] = 14;
-					attRatio = n[0] / 100.0 + 4.0;
-				}
-				else
-				{
-					attRatio = n[4] / 100.0 + 4.0;
-				}
-			}
-			else
-			{
-				std::cout << n[4] << " STRATE FLUSH" << std::endl;
-				attRatio = n[4] / 100.0 + 4.0;
-			}
-		}
-		else if (CTSF == 11)
-		{
-			std::cout << " ROYAL STRATE FLUSH" << std::endl;
-			attRatio = 10;
-		}
-		else
-		{
-			if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
-			{
-				std::cout << ifCardIsRoyal(n) << " TOP" << std::endl;
-				if (n[0] == 1)
-				{
-					n[0] = 14;
-					attRatio = n[0] / 100.0 + 0.8;
-				}
-				else
-				{
-					attRatio = n[4] / 100.0 + 0.8;
-				}
-			}
-			else
-			{
-				std::cout << n[4] << " TOP" << std::endl;
-				attRatio = n[4] / 100.0 + 0.8;
-			}
-		}
-	}
-	else if (CP == 1)
-	{
-		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
-		{
-			std::cout << ifCardIsRoyal(HP) << " ONE PAIR" << std::endl;
-			if (HP == 1)
-			{
-				HP = 14;
-				attRatio = HP / 100.0 + 1.0;
-			}
-			else
-			{
-				attRatio = HP / 100.0 + 1.0;
-			}
-		}
-		else
-		{
-			std::cout << HP << " ONE PAIR" << std::endl;
-			attRatio = HP / 100.0 + 1.0;
-		}
-	}
-	else if (CP == 2)
-	{
-		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
-		{
-			std::cout << ifCardIsRoyal(HP) << " TWO PAIR" << std::endl;
-			if (HP == 1)
-			{
-				HP = 14;
-				attRatio = HP / 100.0 + 1.2;
-			}
-			else
-			{
-				attRatio = HP / 100.0 + 1.2;
-			}
-		}
-		else
-		{
-			std::cout << HP << " TWO PAIR" << std::endl;
-			attRatio = HP / 100.0 + 1.2;
-		}
-	}
-	else if (CP == 3)
-	{
-		if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
-		{
-			std::cout << ifCardIsRoyal(HP) << " TRIPLE" << std::endl;
-			if (HP == 1)
-			{
-				HP = 14;
-				attRatio = HP / 100.0 + 1.4;
-			}else
-			{
-				attRatio = HP / 100.0 + 1.4;
-			}
-		}
-		else
-		{
-			std::cout << HP << " TRIPLE" << std::endl;
-			attRatio = HP / 100.0 + 1.4;
-		}
-	}
-	return attRatio;
-	
-	
+    int checkPairHighPair[3];//CheckPairë¡œ ë°›ì€ ê°’ì„ í•œ ë²ˆ ë°›ì•„ì˜¤ê¸° ìœ„í•œ ì„ì‹œ ë°°ì—´
+    CheckPair(n, s, checkPairHighPair);
+    double attRatio = 0.0f;//ê³µê²©ë ¥ ë°°ìœ¨
+    int CP = checkPairHighPair[0];
+    int HP = checkPairHighPair[1];//HPëŠ” í˜ì–´ ì¤‘ ë†’ì€ ìˆ«ì
+
+    int triple = checkPairHighPair[2];//tripleì€ íŠ¸ë¦¬í”Œì˜ ìˆ«ì ì¤‘ ë†’ì€ ìˆ«ìë¡œ í’€í•˜ìš°ìŠ¤ë¥¼ ìœ„í•œ ê²ƒ ì¤‘ ì•ˆ ì“°ëŠ” íŠ¸ë¦¬í”Œì˜ ìˆ«ìë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜.
+    if (CP == 4)//í”ŒëŸ¬ì‹œ ë³´ë‹¤ ìš°ì„  ìˆœìœ„
+    {
+        if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+        {
+            std::cout << ifCardIsRoyal(triple) << " FULL HOUSE" << std::endl;
+            if (ifCardIsRoyal(triple) == "ACE")
+            {
+                triple = 14;
+                attRatio = triple / 100.0 + 2.0;
+            }
+            else
+            {
+                attRatio = triple / 100.0 + 2.0;
+            }
+        }
+        else
+        {
+            std::cout << triple << " FULL HOUSE" << std::endl;
+            attRatio = triple / 100.0 + 2.0;
+        }
+    }
+    else if (CP == 6)//í”ŒëŸ¬ì‹œ ë³´ë‹¤ ìš°ì„  ìˆœìœ„
+    {
+        if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+        {
+            std::cout << ifCardIsRoyal(HP) << " FOUR CARD" << std::endl;
+            if (HP == 1)
+            {
+                HP = 14;
+                attRatio = HP / 100.0 + 2.5;
+            }
+            else
+            {
+                attRatio = HP / 100.0 + 2.5;
+            }
+        }
+        else
+        {
+            std::cout << HP << " FOUR CARD" << std::endl;
+            attRatio = HP / 100.0 + 2.5;
+        }
+    }
+    else if (CP == 0)
+    {
+        int CTSF = CheckTopStrateFlush(n, s);
+        if (CTSF == 1)
+        {
+            if (n[1] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+            {
+                std::cout << ifCardIsRoyal(n) << " FLUSH" << std::endl;
+                if (n[0] == 1)
+                {
+                    n[0] = 14;
+                    attRatio = n[0] / 100.0 + 1.8;
+                }
+                else
+                {
+                    attRatio = n[4] / 100.0 + 1.8;
+                }
+            }
+            else
+            {
+                std::cout << n[4] << " FLUSH" << std::endl;
+                attRatio = n[4] / 100.0 + 1.8;
+            }
+        }
+        else if (CTSF == 2)
+        {
+            if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+            {
+                std::cout << ifCardIsRoyal(n) << " STRATE" << std::endl;
+                if (n[0] == 1)
+                {
+                    n[0] = 14;
+                    attRatio = n[0] / 100.0 + 1.6;
+                }
+                else
+                {
+                    attRatio = n[4] / 100.0 + 1.6;
+                }
+            }
+            else
+            {
+                std::cout << n[4] << " STRATE" << std::endl;
+                attRatio = n[4] / 100.0 + 1.6;
+            }
+        }
+        else if (CTSF == 3)
+        {
+            if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+            {
+                std::cout << ifCardIsRoyal(n) << " STRATE FLUSH" << std::endl;
+                if (n[0] == 1)
+                {
+                    n[0] = 14;
+                    attRatio = n[0] / 100.0 + 4.0;
+                }
+                else
+                {
+                    attRatio = n[4] / 100.0 + 4.0;
+                }
+            }
+            else
+            {
+                std::cout << n[4] << " STRATE FLUSH" << std::endl;
+                attRatio = n[4] / 100.0 + 4.0;
+            }
+        }
+        else if (CTSF == 11)
+        {
+            std::cout << " ROYAL STRATE FLUSH" << std::endl;
+            attRatio = 10;
+        }
+        else
+        {
+            if (n[0] == 1 || n[4] == 11 || n[4] == 12 || n[4] == 13)
+            {
+                std::cout << ifCardIsRoyal(n) << " TOP" << std::endl;
+                if (n[0] == 1)
+                {
+                    n[0] = 14;
+                    attRatio = n[0] / 100.0 + 0.8;
+                }
+                else
+                {
+                    attRatio = n[4] / 100.0 + 0.8;
+                }
+            }
+            else
+            {
+                std::cout << n[4] << " TOP" << std::endl;
+                attRatio = n[4] / 100.0 + 0.8;
+            }
+        }
+    }
+    else if (CP == 1)
+    {
+        if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+        {
+            std::cout << ifCardIsRoyal(HP) << " ONE PAIR" << std::endl;
+            if (HP == 1)
+            {
+                HP = 14;
+                attRatio = HP / 100.0 + 1.0;
+            }
+            else
+            {
+                attRatio = HP / 100.0 + 1.0;
+            }
+        }
+        else
+        {
+            std::cout << HP << " ONE PAIR" << std::endl;
+            attRatio = HP / 100.0 + 1.0;
+        }
+    }
+    else if (CP == 2)
+    {
+        if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+        {
+            std::cout << ifCardIsRoyal(HP) << " TWO PAIR" << std::endl;
+            if (HP == 1)
+            {
+                HP = 14;
+                attRatio = HP / 100.0 + 1.2;
+            }
+            else
+            {
+                attRatio = HP / 100.0 + 1.2;
+            }
+        }
+        else
+        {
+            std::cout << HP << " TWO PAIR" << std::endl;
+            attRatio = HP / 100.0 + 1.2;
+        }
+    }
+    else if (CP == 3)
+    {
+        if (HP == 1 || HP == 11 || HP == 12 || HP == 13)
+        {
+            std::cout << ifCardIsRoyal(HP) << " TRIPLE" << std::endl;
+            if (HP == 1)
+            {
+                HP = 14;
+                attRatio = HP / 100.0 + 1.4;
+            }
+            else
+            {
+                attRatio = HP / 100.0 + 1.4;
+            }
+        }
+        else
+        {
+            std::cout << HP << " TRIPLE" << std::endl;
+            attRatio = HP / 100.0 + 1.4;
+        }
+    }
+    return attRatio;
 }
 
-void Poker::evaluate(Poker c[],int u, double& MAR, double& PAR, Player* player, Monster* monster, int stage)
+void Poker::evaluate(Poker c[], int u, double& MAR, double& PAR, Player* player, Monster* monster, int stage)
 {
-	CursorControl cursor;
-	UIDesign ui;
-	MonsterDraw(5, c, u);
-	int playernum[5];
-	std::string playershape[5];
-	for (int i = 0; i < 5; i++)
-	{
-		if (c[53 + i].GetNumber()!=0)
-		{
-			playernum[i] = c[53 + i].GetNumber();
-		}
-		else if (c[53 + i].GetNumber() == 0)
-		{
-			playernum[i] = c[58].GetNumber();
-		}
-	}
-	for (int i = 0; i < 5; i++)
-	{
-		if (c[53 + i].GetNumber() != 0)
-		{
-			playershape[i] = c[53 + i].GetShape();
-		}
-		else if (c[53 + i].GetNumber() == 0)
-		{
-			playershape[i] = c[58].GetShape();
-		}
-	}
-	int Monsternum[5];
-	std::string Monstershape[5];
-	for (int i = 0; i < 5; i++)
-	{
-		if (c[59 + i].GetNumber() != 0)
-		{
-			Monsternum[i] = c[59 + i].GetNumber();
-		}
-	}
-	for (int i = 0; i < 5; i++)
-	{
-		if (c[59 + i].GetNumber() != 0)
-		{
-			Monstershape[i] = c[59 + i].GetShape();
-		}
-	}
-	CardSort(playernum, playershape);
-	CardSort(Monsternum, Monstershape);
-	BattleScene battle;
-	battle.PrintScene(player,monster, stage);
-	cursor.gotoxy(82, 17);
-	finalCards(Monsternum, Monstershape);
-	cursor.gotoxy(44, 17);
-	finalCards(playernum, playershape);
-	cursor.gotoxy(6, 23);
-	std::cout << "´ç½ÅÀº ";
-	PAR = checkNumRanking(playernum, playershape);
-	std::cout << ",";
-	cursor.gotoxy(62, 23);
-	std::cout << "¸ó½ºÅÍ´Â ";
-	MAR = checkNumRanking(Monsternum, Monstershape);
-	cursor.gotoxy(6, 25);
-	if (PAR > MAR)
-	{
-		std::cout << "ÇÃ·¹ÀÌ¾î°¡ ½Â¸®ÇÏ¿´½À´Ï´Ù." << std::endl;
-	}
-	else if (PAR < MAR)
-	{
-		std::cout << "¸ó½ºÅÍ°¡ ½Â¸®ÇÏ¿´½À´Ï´Ù." << std::endl;
-	}
-	else
-	{
-		std::cout << "¹«½ÂºÎÀÔ´Ï´Ù." << std::endl;
-	}
-	
+    CursorControl cursor;
+    UIDesign ui;
+    MonsterDraw(5, c, u);
+    int playernum[5];
+    std::string playershape[5];
+    for (int i = 0; i < 5; i++)
+    {
+        if (c[53 + i].GetNumber() != 0)
+        {
+            playernum[i] = c[53 + i].GetNumber();
+        }
+        else if (c[53 + i].GetNumber() == 0)
+        {
+            playernum[i] = c[58].GetNumber();
+        }
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        if (c[53 + i].GetNumber() != 0)
+        {
+            playershape[i] = c[53 + i].GetShape();
+        }
+        else if (c[53 + i].GetNumber() == 0)
+        {
+            playershape[i] = c[58].GetShape();
+        }
+    }
+    int Monsternum[5];
+    std::string Monstershape[5];
+    for (int i = 0; i < 5; i++)
+    {
+        if (c[59 + i].GetNumber() != 0)
+        {
+            Monsternum[i] = c[59 + i].GetNumber();
+        }
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        if (c[59 + i].GetNumber() != 0)
+        {
+            Monstershape[i] = c[59 + i].GetShape();
+        }
+    }
+    CardSort(playernum, playershape);
+    CardSort(Monsternum, Monstershape);
+    BattleScene battle;
+    battle.PrintScene(player, monster, stage);
+    cursor.gotoxy(82, 17);
+    finalCards(Monsternum, Monstershape);
+    cursor.gotoxy(44, 17);
+    finalCards(playernum, playershape);
+    cursor.gotoxy(6, 23);
+    std::cout << "í”Œë ˆì´ì–´ëŠ” ";
+    PAR = checkNumRanking(playernum, playershape);
+    std::cout << ",";
+    cursor.gotoxy(62, 23);
+    std::cout << "ëª¬ìŠ¤í„°ëŠ” ";
+    MAR = checkNumRanking(Monsternum, Monstershape);
+    cursor.gotoxy(6, 25);
+    if (PAR > MAR)
+    {
+        std::cout << "í”Œë ˆì´ì–´ê°€ ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤." << std::endl;
+    }
+    else if (PAR < MAR)
+    {
+        std::cout << "ëª¬ìŠ¤í„°ê°€ ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤." << std::endl;
+    }
+    else
+    {
+        std::cout << "ë¬´ìŠ¹ë¶€ì…ë‹ˆë‹¤." << std::endl;
+    }
 }
 
-void Poker::finalCards(int n[],std::string s[])
+void Poker::finalCards(int n[], std::string s[])
 {
-	for (int i = 0; i < 5; i++)
-	{
-		if (n[i] == 0)
-		{
-		}
-		else
-		{
-			PrintCard(n,s,i);
-			std::cout << " ";
-		}
-
-	}
+    for (int i = 0; i < 5; i++)
+    {
+        if (n[i] == 0)
+        {
+        }
+        else
+        {
+            PrintCard(n, s, i);
+            std::cout << " ";
+        }
+    }
 }
 
-
-double Poker::playPoker(double& MAR, double& PAR,Player* player,Monster* monster, int stage)
+double Poker::playPoker(double& MAR, double& PAR, Player* player, Monster* monster, int stage)
 {
-	CursorControl cursor;
-	UIDesign ui;
-	Poker cards[64];
-	cardSetting(cards);
-	//ÀÎ°ÔÀÓ, Ä«µå »Ì±â
-	int usecard = 0;
-	cursor.gotoxy(44, 17);
-	draw(4, cards, usecard);
-	std::cout<<std::endl;
-	cursor.gotoxy(6, 25);
-	chooseTrashCards(usecard, cards);
-	cursor.gotoxy(56, 17);
-	draw(2, cards, usecard);
-	evaluate(cards, usecard, MAR, PAR, player,monster,stage);
-	return 0;
+    CursorControl cursor;
+    UIDesign ui;
+    Poker cards[64];
+    cardSetting(cards);
+    //ë‘ê°œì”©, ì¹´ë“œ ë½‘ê¸°
+    int usecard = 0;
+    cursor.gotoxy(44, 17);
+    draw(4, cards, usecard);
+    std::cout << std::endl;
+    cursor.gotoxy(6, 25);
+    chooseTrashCards(usecard, cards);
+    cursor.gotoxy(56, 17);
+    draw(2, cards, usecard);
+    evaluate(cards, usecard, MAR, PAR, player, monster, stage);
+    return 0;
 }
 
 int Poker::printMenu()
 {
-	CursorControl cursor;
-	int choice = 0;
-	while (1)
-	{
-		int input;
-		if (_kbhit)
-		{
-			input = _getch();
-			switch (input)
-			{
-			case LEFT:
-				if (choice > 0)
-				{
-					choice--;
-				}
-				cursor.gotoxy(45 + 4 * choice + 4,18);
-				std::cout << "  ";
-				cursor.gotoxy(45 + 4 * choice,18);
-				std::cout << "£Ş";
-				break;
-			case RIGHT:
-				if (choice < 3)
-				{
-					choice++;
-				}
-				cursor.gotoxy(45 + 4 * choice - 4, 18);
-				std::cout << "  ";
-				cursor.gotoxy(45 + 4 * choice, 18);
-				std::cout << "£Ş";
-				break;
-			case SPACE:
-				return choice;
-			}
-		}
-	}
-	return 0;
+    CursorControl cursor;
+    int choice = 0;
+    while (1)
+    {
+        int input;
+        if (_kbhit)
+        {
+            input = _getch();
+            switch (input)
+            {
+            case LEFT:
+                if (choice > 0)
+                {
+                    choice--;
+                }
+                cursor.gotoxy(45 + 4 * choice + 4, 18);
+                std::cout << "  ";
+                cursor.gotoxy(45 + 4 * choice, 18);
+                std::cout << "â–¶";
+                break;
+            case RIGHT:
+                if (choice < 3)
+                {
+                    choice++;
+                }
+                cursor.gotoxy(45 + 4 * choice - 4, 18);
+                std::cout << "  ";
+                cursor.gotoxy(45 + 4 * choice, 18);
+                std::cout << "â–¶";
+                break;
+            case SPACE:
+                return choice;
+            }
+        }
+    }
+    return 0;
 }
-
-

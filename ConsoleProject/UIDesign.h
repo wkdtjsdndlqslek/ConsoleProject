@@ -5,229 +5,229 @@
 class UIDesign
 {
 public:
-	void titleDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(0, 0);
-		std::cout << std::endl;
-		std::cout << "   ¡á¡á¡á    ¡á¡á¡á   ¡á      ¡á ¡á¡á¡á¡á   ¡á¡á       ¡á¡á¡á¡á¡á ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á      " << std::endl;
-		std::cout << "  ¡á        ¡á    ¡á  ¡á¡á  ¡á¡á ¡á      ¡á ¡á¡á       ¡á         ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                    " << std::endl;
-		std::cout << "  ¡á  ¡á¡á ¡á¡á¡á¡á¡á ¡á  ¡á  ¡á ¡á¡á¡á¡á   ¡á¡á       ¡á¡á¡á¡á¡á ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "  ¡á    ¡á ¡á      ¡á ¡á  ¡á  ¡á ¡á      ¡á ¡á¡á       ¡á         ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                    " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á ¡á      ¡á ¡á  ¡á  ¡á ¡á¡á¡á¡á   ¡á¡á¡á¡á¡á ¡á¡á¡á¡á¡á ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á            " << std::endl;
-		std::cout << "                                                                  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                    " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                    " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                        " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á            " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                          " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                      " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                          " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á                          " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-	}
+    void titleDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(0, 0);
+        std::cout << std::endl;
+        std::cout << "   â– â–     â– â–    â–       â–  â– â– â–    â– â–        â– â– â– â–  â– â– â– â– â– â– â– â– â– â– â– â–       " << std::endl;
+        std::cout << "  â–         â–     â–   â– â–   â– â–  â–       â–  â– â–        â–          â– â– â– â– â– â– â– â– â– â–                     " << std::endl;
+        std::cout << "  â–   â– â–  â– â– â– â–  â–   â–   â–  â– â– â–    â– â–        â– â– â– â–  â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "  â–     â–  â–       â–  â–   â–   â–  â–       â–  â– â–        â–          â– â– â– â– â– â– â– â– â– â–                     " << std::endl;
+        std::cout << "  â– â– â–  â–       â–  â–   â–   â–  â– â– â–    â– â– â– â–  â– â– â– â–  â– â– â– â– â– â– â– â– â– â–             " << std::endl;
+        std::cout << "                                                                  â– â– â– â– â– â– â– â– â– â–                     " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                     " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                         " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–             " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                           " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                       " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                           " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–                           " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+    }
 
-	void bottomDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(0, 0);
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "                                                                                                                        " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-	}
+    void bottomDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(0, 0);
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "                                                                                                                        " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+    }
 
-	void onlyBottomDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(0, 21);
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-	}
+    void onlyBottomDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(0, 21);
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+    }
 
-	void wholeDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(0, 0);
-		std::cout << "                                                                                                                       " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á                      ¡á  ¡á                                                                                    ¡á  " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "                                                                                                                       " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á                                                                                                                ¡á  " << std::endl;
-		std::cout << "  ¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á  " << std::endl;
-	}
+    void wholeDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(0, 0);
+        std::cout << "                                                                                                                       " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â–   â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â–                       â–   â–                                                                                     â–   " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â–   â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "                                                                                                                       " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â–                                                                                                                 â–   " << std::endl;
+        std::cout << "  â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â–   " << std::endl;
+    }
 
-	void windowDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(45, 8);
-		std::cout << "¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤";
-		cursor.gotoxy(45, 9);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 10);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 11);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 12);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 13);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 14);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 15);
-		std::cout << "¦¢                            ¦¢";
-		cursor.gotoxy(45, 16);
-		std::cout << "¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥";
-	}
+    void windowDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(45, 8);
+        std::cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– ";
+        cursor.gotoxy(45, 9);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 10);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 11);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 12);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 13);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 14);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 15);
+        std::cout << "â–                             â– ";
+        cursor.gotoxy(45, 16);
+        std::cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– ";
+    }
 
-	int yesOrNoDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(49, 12);
-		std::cout << "¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤";
-		cursor.gotoxy(48, 13);
-		std::cout << ">¦¢   ³×  ¦¢";
-		cursor.gotoxy(49, 14);
-		std::cout << "¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥";
-		cursor.gotoxy(62, 12);
-		std::cout << "¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤";
-		cursor.gotoxy(62, 13);
-		std::cout << "¦¢ ¾Æ´Ï¿À¦¢";
-		cursor.gotoxy(62, 14);
-		std::cout << "¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥ ";
-		int choice = 0;
-		while (1)
-		{
-			int input;
-			if (_kbhit())
-			{
-				input = _getch();
-				switch (input)
-				{
-				case LEFT:
-					if (choice > 0)
-					{
-						choice--;
-					}
-					cursor.gotoxy(61, 13);
-					std::cout << " ";
-					cursor.gotoxy(48, 13);
-					std::cout << ">";
-					break;
-				case RIGHT:
-					if (choice < 1)
-					{
-						choice++;
-					}
-					cursor.gotoxy(48, 13);
-					std::cout << " ";
-					cursor.gotoxy(61, 13);
-					std::cout << ">";
-					break;
-				case ENTER:
-					return choice;
-				}
-			}
-		}
-	}
+    int yesOrNoDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(49, 12);
+        std::cout << "â– â– â– â– â– â– â– â– â– ";
+        cursor.gotoxy(48, 13);
+        std::cout << ">â–    ì˜ˆ  â– ";
+        cursor.gotoxy(49, 14);
+        std::cout << "â– â– â– â– â– â– â– â– â– ";
+        cursor.gotoxy(62, 12);
+        std::cout << "â– â– â– â– â– â– â– â– â– ";
+        cursor.gotoxy(62, 13);
+        std::cout << "â–  ì•„ë‹ˆì˜¤â– ";
+        cursor.gotoxy(62, 14);
+        std::cout << "â– â– â– â– â– â– â– â– â–  ";
+        int choice = 0;
+        while (1)
+        {
+            int input;
+            if (_kbhit())
+            {
+                input = _getch();
+                switch (input)
+                {
+                case LEFT:
+                    if (choice > 0)
+                    {
+                        choice--;
+                    }
+                    cursor.gotoxy(61, 13);
+                    std::cout << " ";
+                    cursor.gotoxy(48, 13);
+                    std::cout << ">";
+                    break;
+                case RIGHT:
+                    if (choice < 1)
+                    {
+                        choice++;
+                    }
+                    cursor.gotoxy(48, 13);
+                    std::cout << " ";
+                    cursor.gotoxy(61, 13);
+                    std::cout << ">";
+                    break;
+                case ENTER:
+                    return choice;
+                }
+            }
+        }
+    }
 
-	void checkDesign()
-	{
-		CursorControl cursor;
-		cursor.gotoxy(56, 13);
-		std::cout << "¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤";
-		cursor.gotoxy(56, 14);
-		std::cout << "¦¢  È®ÀÎ ¦¢";
-		cursor.gotoxy(56, 15);
-		std::cout << "¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥ ";
-		while (1)
-		{
-			int input;
-			if (_kbhit())
-			{
-				input = _getch();
-				if (input == ENTER) break;
-			}
-		}
-	}
-	void justNext()
-	{
-		while (1)
-		{
-			int input;
-			if (_kbhit())
-			{
-				input = _getch();
-				if (input == SPACE) break;
-			}
-		}
-	}
+    void checkDesign()
+    {
+        CursorControl cursor;
+        cursor.gotoxy(56, 13);
+        std::cout << "â– â– â– â– â– â– â– â– â– ";
+        cursor.gotoxy(56, 14);
+        std::cout << "â–   í™•ì¸ â– ";
+        cursor.gotoxy(56, 15);
+        std::cout << "â– â– â– â– â– â– â– â– â–  ";
+        while (1)
+        {
+            int input;
+            if (_kbhit())
+            {
+                input = _getch();
+                if (input == ENTER) break;
+            }
+        }
+    }
+
+    void justNext()
+    {
+        while (1)
+        {
+            int input;
+            if (_kbhit())
+            {
+                input = _getch();
+                if (input == SPACE) break;
+            }
+        }
+    }
 };
-

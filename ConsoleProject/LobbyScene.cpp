@@ -7,101 +7,98 @@
 
 void LobbyScene::runScene(Player* player, InventoryScene* inventory)
 {
-	while(1)
-	{
-		CursorControl cursor;
-		UIDesign ui;
-		PrintScene();
-		int choice=PrintMenu();
-		if (choice == 0)//switchπÆ ªÁøÎ ∫“∞°
-		{
-			StoreScene store;
-			store.runScene(player, inventory);
-		}
-		else if (choice == 1)
-		{
-			inventory->runScene(player,inventory);
-		}
-		else if (choice == 2)
-		{
-			ui.windowDesign();
-			cursor.gotoxy(48, 10);
-			std::cout << "¥¯¿¸ø° ¿‘¿Â«œΩ√∞⁄Ω¿¥œ±Ó?";
-			int choice=ui.yesOrNoDesign();
-			if (choice == 0) 
-			{
-				DungeonScene dungeon;
-				dungeon.runScene(player);
-			}
-		}
-		else if (choice == 3)
-		{
-			TitleScene title;
-			title.runScene(player,inventory);
-		}
-	}
+    while (1)
+    {
+        CursorControl cursor;
+        UIDesign ui;
+        PrintScene();
+        int choice = PrintMenu();
+        if (choice == 0)//switchÎ¨∏ ÏÇ¨Ïö© Î∂àÍ∞Ä
+        {
+            StoreScene store;
+            store.runScene(player, inventory);
+        }
+        else if (choice == 1)
+        {
+            inventory->runScene(player, inventory);
+        }
+        else if (choice == 2)
+        {
+            ui.windowDesign();
+            cursor.gotoxy(48, 10);
+            std::cout << "ÎçòÏ†ÑÏóê ÏûÖÏû•ÌïòÏãúÍ≤†ÏäµÎãàÍπå?";
+            int choice = ui.yesOrNoDesign();
+            if (choice == 0)
+            {
+                DungeonScene dungeon;
+                dungeon.runScene(player);
+            }
+        }
+        else if (choice == 3)
+        {
+            TitleScene title;
+            title.runScene(player, inventory);
+        }
+    }
 }
 
 int LobbyScene::PrintMenu()
 {
-	CursorControl cursor;
-	int x = 6;
-	int y = 3;
-	int choice = 0;
-	while (1)
-	{
-		cursor.gotoxy(x, y);
-		int input;
-		if (_kbhit())
-		{
-			input=_getch();
-			switch (input)
-			{
-			case UP:
-				if (choice > 0)
-				{
-					choice--;
-				}
-				cursor.gotoxy(x, y + 2*choice);
-				std::cout << ">" << std::endl;
-				cursor.gotoxy(x, y + 2*choice + 2);
-				std::cout << "  " << std::endl;
-				break;
-			case DOWN:
-				if (choice < 3)
-				{
-					choice++;
-				}
-				cursor.gotoxy(x, y + 2*choice - 2);
-				std::cout << "  " << std::endl;
-				cursor.gotoxy(x, y + 2*choice);
-				std::cout << ">" << std::endl;
-				break;
-			case RIGHT:
-				return choice;
-			case SPACE:
-				return choice;
-			case ENTER:
-				return choice;
-			}
-		}
-	}
+    CursorControl cursor;
+    int x = 6;
+    int y = 3;
+    int choice = 0;
+    while (1)
+    {
+        cursor.gotoxy(x, y);
+        int input;
+        if (_kbhit())
+        {
+            input = _getch();
+            switch (input)
+            {
+            case UP:
+                if (choice > 0)
+                {
+                    choice--;
+                }
+                cursor.gotoxy(x, y + 2 * choice);
+                std::cout << ">" << std::endl;
+                cursor.gotoxy(x, y + 2 * choice + 2);
+                std::cout << "  " << std::endl;
+                break;
+            case DOWN:
+                if (choice < 3)
+                {
+                    choice++;
+                }
+                cursor.gotoxy(x, y + 2 * choice - 2);
+                std::cout << "  " << std::endl;
+                cursor.gotoxy(x, y + 2 * choice);
+                std::cout << ">" << std::endl;
+                break;
+            case RIGHT:
+                return choice;
+            case SPACE:
+                return choice;
+            case ENTER:
+                return choice;
+            }
+        }
+    }
 }
 
 void LobbyScene::PrintScene()
 {
-
-	CursorControl cursor;
-	UIDesign ui;
-	ui.wholeDesign();
-	cursor.gotoxy(6, 3);
-	std::cout << "> ªÛ¡°" << std::endl;
-	cursor.gotoxy(8, 5);
-	std::cout << "¿Œ∫•≈‰∏Æ" << std::endl;
-	cursor.gotoxy(8, 7);
-	std::cout << "¥¯¿¸" << std::endl;
-	cursor.gotoxy(8, 9);
-	std::cout << "≈∏¿Ã∆≤" << std::endl;
+    CursorControl cursor;
+    UIDesign ui;
+    ui.wholeDesign();
+    cursor.gotoxy(6, 3);
+    std::cout << "> ÏÉÅÏ†ê" << std::endl;
+    cursor.gotoxy(8, 5);
+    std::cout << "Ïù∏Î≤§ÌÜ†Î¶¨" << std::endl;
+    cursor.gotoxy(8, 7);
+    std::cout << "ÎçòÏ†Ñ" << std::endl;
+    cursor.gotoxy(8, 9);
+    std::cout << "ÌÉÄÏù¥ÌãÄ" << std::endl;
 }
-
-

@@ -7,124 +7,121 @@
 
 int BattleScene::runScene(Player* player, Monster* monster, int stage)
 {
-	CursorControl cursor;
-	UIDesign ui;
-	cursor.gotoxy(6, 23);
-	std::cout << "¾ß»ýÀÇ " << monster->GetName() << "ÀÌ ³ªÅ¸³µ´Ù!";
-	PrintPlayer(player);
-	PrintMonster(monster);
-	ui.justNext();
-	ui.onlyBottomDesign();
-	cursor.gotoxy(6, 23);
-	std::cout << "µà¾ó!";
-	ui.justNext();
-	while (1)
-	{
-		Poker p;
-		double monsterAttRatio = 0;
-		double playerAttRatio = 0;
-		p.playPoker(monsterAttRatio, playerAttRatio,player,monster,stage);
-		ui.justNext();
-		PrintScene(player,monster,stage);
-		cursor.gotoxy(6, 23);
-		if (monsterAttRatio < playerAttRatio)
-		{
-			std::cout << "¸ó½ºÅÍ°¡ " << player->GetAtt() * playerAttRatio
-				<< "ÀÇ µ¥¹ÌÁö¸¦ ÀÔ¾ú½À´Ï´Ù." << std::endl;
-			monster->SetHp(monster->GetHp() - player->GetAtt() * playerAttRatio);
-		}
-		if (monsterAttRatio > playerAttRatio)
-		{
-			std::cout << "ÇÃ·¹ÀÌ¾î°¡ " << monster->GetAtt() * playerAttRatio
-				<< "ÀÇ µ¥¹ÌÁö¸¦ ÀÔ¾ú½À´Ï´Ù." << std::endl;
-			player->SetHp(player->GetHp() - monster->GetAtt() * playerAttRatio);
-		}
-		cursor.gotoxy(6, 25);
-		std::cout << "ÇÃ·¹ÀÌ¾î Ã¼·Â : " << player->GetHp() << std::endl;
-		cursor.gotoxy(6, 26);
-		std::cout << "¸ó½ºÅÍ Ã¼·Â : " << monster->GetHp() << std::endl;
-		std::cout << std::endl;
-		ui.justNext();
-		if (player->GetHp() <= 0)
-		{
-			ui.windowDesign();
-			cursor.gotoxy(52,10);
-			std::cout << "»ç¸ÁÇÏ¿´½À´Ï´Ù. ";
-			cursor.gotoxy(50, 11); 
-			std::cout<< monster->GetMoney() << "°ñµå¸¦ ÀÒ¾ú½À´Ï´Ù." << std::endl;
-			player->SetMoney(player->GetMoney() - monster->GetMoney());
-			std::cout << "º¸À¯ °ñµå : " << player->GetMoney() << std::endl;
-			ui.checkDesign();
-			ui.windowDesign();
-			cursor.gotoxy(52,10);
-			std::cout << "·Îºñ·Î ÀÌµ¿ÇÕ´Ï´Ù.";
-			ui.checkDesign();
-			player->SetHp(1000);
-			return 0;
-		}
-		else if (monster->GetHp() <= 0)
-		{
-			ui.windowDesign();
-			cursor.gotoxy(53, 10);
-			std::cout << "½ºÅ×ÀÌÁö Å¬¸®¾î"; 
-			cursor.gotoxy(53, 11);
-			std::cout<< monster->GetMoney() << "°ñµå È¹µæ" << std::endl;
-			player->SetMoney(player->GetMoney() + monster->GetMoney());
-			cursor.gotoxy(53, 12);
-			std::cout << "º¸À¯ °ñµå : " << player->GetMoney() << std::endl;
-			ui.checkDesign();
-			break;
-		}
-	}
+    CursorControl cursor;
+    UIDesign ui;
+    cursor.gotoxy(6, 23);
+    std::cout << "ê°‘ìžê¸° " << monster->GetName() << "ê°€ ë‚˜íƒ€ë‚¬ë‹¤!";
+    PrintPlayer(player);
+    PrintMonster(monster);
+    ui.justNext();
+    ui.onlyBottomDesign();
+    cursor.gotoxy(6, 23);
+    std::cout << "ì „íˆ¬!";
+    ui.justNext();
+    while (1)
+    {
+        Poker p;
+        double monsterAttRatio = 0;
+        double playerAttRatio = 0;
+        p.playPoker(monsterAttRatio, playerAttRatio, player, monster, stage);
+        ui.justNext();
+        PrintScene(player, monster, stage);
+        cursor.gotoxy(6, 23);
+        if (monsterAttRatio < playerAttRatio)
+        {
+            std::cout << "ëª¬ìŠ¤í„°ê°€ " << player->GetAtt() * playerAttRatio
+                << "ì˜ ë°ë¯¸ì§€ë¥¼ ë¨¹ì—ˆìŠµë‹ˆë‹¤." << std::endl;
+            monster->SetHp(monster->GetHp() - player->GetAtt() * playerAttRatio);
+        }
+        if (monsterAttRatio > playerAttRatio)
+        {
+            std::cout << "í”Œë ˆì´ì–´ê°€ " << monster->GetAtt() * playerAttRatio
+                << "ì˜ ë°ë¯¸ì§€ë¥¼ ë¨¹ì—ˆìŠµë‹ˆë‹¤." << std::endl;
+            player->SetHp(player->GetHp() - monster->GetAtt() * playerAttRatio);
+        }
+        cursor.gotoxy(6, 25);
+        std::cout << "í”Œë ˆì´ì–´ ì²´ë ¥ : " << player->GetHp() << std::endl;
+        cursor.gotoxy(6, 26);
+        std::cout << "ëª¬ìŠ¤í„° ì²´ë ¥ : " << monster->GetHp() << std::endl;
+        std::cout << std::endl;
+        ui.justNext();
+        if (player->GetHp() <= 0)
+        {
+            ui.windowDesign();
+            cursor.gotoxy(52, 10);
+            std::cout << "íŒ¨ë°°í•˜ì˜€ìŠµë‹ˆë‹¤. ";
+            cursor.gotoxy(50, 11);
+            std::cout << monster->GetMoney() << "ê³¨ë“œë¥¼ ìžƒì—ˆìŠµë‹ˆë‹¤." << std::endl;
+            player->SetMoney(player->GetMoney() - monster->GetMoney());
+            std::cout << "í˜„ìž¬ ê³¨ë“œ : " << player->GetMoney() << std::endl;
+            ui.checkDesign();
+            ui.windowDesign();
+            cursor.gotoxy(52, 10);
+            std::cout << "ë¡œë¹„ë¡œ ì´ë™í•©ë‹ˆë‹¤.";
+            ui.checkDesign();
+            player->SetHp(1000);
+            return 0;
+        }
+        else if (monster->GetHp() <= 0)
+        {
+            ui.windowDesign();
+            cursor.gotoxy(53, 10);
+            std::cout << "ë˜ì „ì„ í´ë¦¬ì–´";
+            cursor.gotoxy(53, 11);
+            std::cout << monster->GetMoney() << "ê³¨ë“œ íšë“" << std::endl;
+            player->SetMoney(player->GetMoney() + monster->GetMoney());
+            cursor.gotoxy(53, 12);
+            std::cout << "í˜„ìž¬ ê³¨ë“œ : " << player->GetMoney() << std::endl;
+            ui.checkDesign();
+            break;
+        }
+    }
 }
 
-void BattleScene::PrintScene(Player* player, Monster* monster,int stage)
+void BattleScene::PrintScene(Player* player, Monster* monster, int stage)
 {
-	DungeonScene dungeon;
-	dungeon.PrintScene(stage);
-	PrintMonster(monster);
-	PrintPlayer(player);
+    DungeonScene dungeon;
+    dungeon.PrintScene(stage);
+    PrintMonster(monster);
+    PrintPlayer(player);
 }
 
 void BattleScene::PrintMonster(Monster* monster)
 {
-	CursorControl cursor;
-	cursor.gotoxy(89, 7);
-	std::cout << monster->GetName();
-	cursor.gotoxy(89, 8);
-	std::cout << "_-¡þ/¡þ/";
-	cursor.gotoxy(87, 9);
-	std::cout << "¡Ð /    )";
-	cursor.gotoxy(87, 10);
-	std::cout << "(¡Ò    )";
-	cursor.gotoxy(88, 11);
-	std::cout << "_| |_";
-	cursor.gotoxy(86, 12);
-	std::cout << "/       ¡¬";
-	cursor.gotoxy(87, 13);
-	std::cout << "( /¡¬ )";
-	cursor.gotoxy(87, 14);
-	std::cout << "(/  ¡¬)";
+    CursorControl cursor;
+    cursor.gotoxy(89, 7);
+    std::cout << monster->GetName();
+    cursor.gotoxy(89, 8);
+    std::cout << "_-â–²/â–²/";
+    cursor.gotoxy(87, 9);
+    std::cout << "â–  /    )";
+    cursor.gotoxy(87, 10);
+    std::cout << "(â–     )";
+    cursor.gotoxy(88, 11);
+    std::cout << "_| |_";
+    cursor.gotoxy(86, 12);
+    std::cout << "/       â– ";
+    cursor.gotoxy(87, 13);
+    std::cout << "( /â–  )";
+    cursor.gotoxy(87, 14);
+    std::cout << "(/  â– )";
 }
 
 void BattleScene::PrintPlayer(Player* player)
 {
-	{
-		CursorControl cursor;
-		cursor.gotoxy(51, 8);
-		std::cout << player->GetName();
-		cursor.gotoxy(51, 9);
-		std::cout << "///////";
-		cursor.gotoxy(50, 10);
-		std::cout << "(   `¡Ò)";
-		cursor.gotoxy(51, 11);
-		std::cout << "_| |_";
-		cursor.gotoxy(49, 12);
-		std::cout << "/       ¡¬";
-		cursor.gotoxy(50, 13);
-		std::cout << "( /¡¬ )";
-		cursor.gotoxy(50, 14);
-		std::cout << "(/  ¡¬)";
-	}
+    CursorControl cursor;
+    cursor.gotoxy(51, 8);
+    std::cout << player->GetName();
+    cursor.gotoxy(51, 9);
+    std::cout << "///////";
+    cursor.gotoxy(50, 10);
+    std::cout << "(   `â– )";
+    cursor.gotoxy(51, 11);
+    std::cout << "_| |_";
+    cursor.gotoxy(49, 12);
+    std::cout << "/       â– ";
+    cursor.gotoxy(50, 13);
+    std::cout << "( /â–  )";
+    cursor.gotoxy(50, 14);
+    std::cout << "(/  â– )";
 }
-

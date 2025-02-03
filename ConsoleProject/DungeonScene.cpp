@@ -3,84 +3,79 @@
 #include "UIDesign.h"
 #include "CursorControl.h"
 
-
-
 void DungeonScene::runScene(Player* player)
 {
-	CursorControl cursor;
-	UIDesign ui;
-	double stage=1.0;
-	
-	while (1)
-	{
-		PrintScene(stage);
-		Monster* monster;
-		monster =new Monster("°íºí¸°", stage*100.0, 10 + stage, stage*100);
-		BattleScene b;
-		if (b.runScene(player, monster, stage) == 0)break;
-		delete monster;ui.windowDesign();
-		cursor.gotoxy(53, 10);
-		std::cout << "´ÙÀ½ ½ºÅ×ÀÌÁö·Î";
-		cursor.gotoxy(52, 11);
-		std::cout<<"ÀÌµ¿ÇÏ½Ã°Ú½À´Ï±î?";
-		int select = ui.yesOrNoDesign();
-		if (select == 1)break;
-		stage++;
-	}
-	
+    CursorControl cursor;
+    UIDesign ui;
+    double stage = 1.0;
+
+    while (1)
+    {
+        PrintScene(stage);
+        Monster* monster;
+        monster = new Monster("ëª¬ìŠ¤í„°", stage * 100.0, 10 + stage, stage * 100);
+        BattleScene b;
+        if (b.runScene(player, monster, stage) == 0)break;
+        delete monster;
+        ui.windowDesign();
+        cursor.gotoxy(53, 10);
+        std::cout << "ë‹¤ìŒ ìŠ¤í…Œì´ì§€ë¡œ";
+        cursor.gotoxy(52, 11);
+        std::cout << "ì´ë™í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+        int select = ui.yesOrNoDesign();
+        if (select == 1)break;
+        stage++;
+    }
 }
 
 void DungeonScene::PrintScene(int stage)
 {
-	UIDesign ui;
-	CursorControl cursor;
-	cursor.gotoxy(0, 0);
-	ui.wholeDesign();
-	cursor.gotoxy(35, 3);
-	std::cout << "<stage " << stage << ">" << std::endl;
-	{
-		cursor.gotoxy(6, 3);
-		std::cout << "ROYAL STRATE FLUSH";
-		cursor.gotoxy(7, 4);
-		std::cout << "10¹è";
-		cursor.gotoxy(6, 5);
-		std::cout << "STRATE FLUSH";
-		cursor.gotoxy(7, 6);
-		std::cout << "4¹è";
-		cursor.gotoxy(6, 7);
-		std::cout << "FOUR CARD";
-		cursor.gotoxy(7, 8);
-		std::cout << "2.5¹è";
-		cursor.gotoxy(6, 9);
-		std::cout << "FULL HOUSE";
-		cursor.gotoxy(7, 10);
-		std::cout << "2.0¹è";
-		cursor.gotoxy(6, 11);
-		std::cout << "FLUSH";
-		cursor.gotoxy(7, 12);
-		std::cout << "1.8¹è";
-		cursor.gotoxy(6, 13);
-		std::cout << "STRATE";
-		cursor.gotoxy(7, 14);
-		std::cout << "1.6¹è";
-		cursor.gotoxy(6, 15);
-		std::cout << "TRIPLE";
-		cursor.gotoxy(7, 16);
-		std::cout << "1.4¹è";
-		cursor.gotoxy(16, 15);
-		std::cout << "TWO PAIR";
-		cursor.gotoxy(17, 16);
-		std::cout << "1.2¹è";
-		cursor.gotoxy(6, 17);
-		std::cout << "ONE PAIR";
-		cursor.gotoxy(7, 18);
-		std::cout << "1.0¹è";
-		cursor.gotoxy(16, 17);
-		std::cout << "TOP";
-		cursor.gotoxy(17, 18);
-		std::cout << "0.8¹è";
-	}
+    UIDesign ui;
+    CursorControl cursor;
+    cursor.gotoxy(0, 0);
+    ui.wholeDesign();
+    cursor.gotoxy(35, 3);
+    std::cout << "<stage " << stage << ">" << std::endl;
+    {
+        cursor.gotoxy(6, 3);
+        std::cout << "ROYAL STRATE FLUSH";
+        cursor.gotoxy(7, 4);
+        std::cout << "10ë°°";
+        cursor.gotoxy(6, 5);
+        std::cout << "STRATE FLUSH";
+        cursor.gotoxy(7, 6);
+        std::cout << "4ë°°";
+        cursor.gotoxy(6, 7);
+        std::cout << "FOUR CARD";
+        cursor.gotoxy(7, 8);
+        std::cout << "2.5ë°°";
+        cursor.gotoxy(6, 9);
+        std::cout << "FULL HOUSE";
+        cursor.gotoxy(7, 10);
+        std::cout << "2.0ë°°";
+        cursor.gotoxy(6, 11);
+        std::cout << "FLUSH";
+        cursor.gotoxy(7, 12);
+        std::cout << "1.8ë°°";
+        cursor.gotoxy(6, 13);
+        std::cout << "STRATE";
+        cursor.gotoxy(7, 14);
+        std::cout << "1.6ë°°";
+        cursor.gotoxy(6, 15);
+        std::cout << "TRIPLE";
+        cursor.gotoxy(7, 16);
+        std::cout << "1.4ë°°";
+        cursor.gotoxy(16, 15);
+        std::cout << "TWO PAIR";
+        cursor.gotoxy(17, 16);
+        std::cout << "1.2ë°°";
+        cursor.gotoxy(6, 17);
+        std::cout << "ONE PAIR";
+        cursor.gotoxy(7, 18);
+        std::cout << "1.0ë°°";
+        cursor.gotoxy(16, 17);
+        std::cout << "TOP";
+        cursor.gotoxy(17, 18);
+        std::cout << "0.8ë°°";
+    }
 }
-
-
-

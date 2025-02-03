@@ -1,54 +1,122 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\",
+  "WorkspaceRootPath": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:BattleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:InventoryScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:UIDesign.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:UIDesign.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\CursorControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:CursorControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:InventoryScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:DungeonScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:BattleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:UIDesign.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Poker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:CursorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:StoreScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:LobbyScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:InventoryScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:DungeonScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CF21968-F310-4409-94E5-006331F798AB}|ConsoleProject.vcxproj|solutionrelative:BattleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,123 +126,292 @@
       "DocumentGroups": [
         {
           "DockedWidth": 167,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "InventoryScene.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
-              "RelativeDocumentMoniker": "InventoryScene.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
-              "RelativeToolTip": "InventoryScene.cpp",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T11:17:00.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Poker.h",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
-              "RelativeDocumentMoniker": "Poker.h",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Poker.h",
-              "RelativeToolTip": "Poker.h",
+              "Title": "Item.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.h",
+              "RelativeDocumentMoniker": "Item.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.h",
+              "RelativeToolTip": "Item.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-06T11:10:35.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StoreScene.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
-              "RelativeDocumentMoniker": "StoreScene.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
-              "RelativeToolTip": "StoreScene.cpp",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T11:10:33.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T02:34:59.123Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LobbyScene.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
-              "RelativeDocumentMoniker": "LobbyScene.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
-              "RelativeToolTip": "LobbyScene.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T11:10:32.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TitleScene.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp",
-              "RelativeDocumentMoniker": "TitleScene.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\TitleScene.cpp",
-              "RelativeToolTip": "TitleScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T11:10:31.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UIDesign.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.cpp",
-              "RelativeDocumentMoniker": "UIDesign.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.cpp",
-              "RelativeToolTip": "UIDesign.cpp",
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.h",
+              "RelativeDocumentMoniker": "Game.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.h",
+              "RelativeToolTip": "Game.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T11:09:56.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CursorControl.h",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\CursorControl.h",
-              "RelativeDocumentMoniker": "CursorControl.h",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\CursorControl.h",
-              "RelativeToolTip": "CursorControl.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-06T11:09:54.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T02:34:58.087Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Unit.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.h",
+              "RelativeDocumentMoniker": "Unit.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.h",
+              "RelativeToolTip": "Unit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:53.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.h",
+              "RelativeDocumentMoniker": "Player.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.h",
+              "RelativeToolTip": "Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:32.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Monster.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.h",
+              "RelativeDocumentMoniker": "Monster.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.h",
+              "RelativeToolTip": "Monster.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:32.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TitleScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.h",
+              "RelativeDocumentMoniker": "TitleScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.h",
+              "RelativeToolTip": "TitleScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:29.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StoreScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.h",
+              "RelativeDocumentMoniker": "StoreScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.h",
+              "RelativeToolTip": "StoreScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:28.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LobbyScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
+              "RelativeDocumentMoniker": "LobbyScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.h",
+              "RelativeToolTip": "LobbyScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:27.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InventoryScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
+              "RelativeDocumentMoniker": "InventoryScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.h",
+              "RelativeToolTip": "InventoryScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:26.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DungeonScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
+              "RelativeDocumentMoniker": "DungeonScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.h",
+              "RelativeToolTip": "DungeonScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T02:34:22.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Poker.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.cpp",
+              "RelativeDocumentMoniker": "Poker.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.cpp",
+              "RelativeToolTip": "Poker.cpp",
+              "ViewState": "AgIAAMcCAAAAAAAAAAAuwOECAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:30:43.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Item.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.cpp",
+              "RelativeDocumentMoniker": "Item.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Item.cpp",
+              "RelativeToolTip": "Item.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:30:41.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Poker.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.h",
+              "RelativeDocumentMoniker": "Poker.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Poker.h",
+              "RelativeToolTip": "Poker.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwEgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-06T11:10:35.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UIDesign.h",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.h",
               "RelativeDocumentMoniker": "UIDesign.h",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\UIDesign.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.h",
               "RelativeToolTip": "UIDesign.h",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAL0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAACdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-06T11:09:38.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
+              "Title": "CursorControl.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.cpp",
+              "RelativeDocumentMoniker": "CursorControl.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.cpp",
+              "RelativeToolTip": "CursorControl.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:30:37.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Unit.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.cpp",
+              "RelativeDocumentMoniker": "Unit.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Unit.cpp",
+              "RelativeToolTip": "Unit.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:34:12.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CursorControl.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.h",
+              "RelativeDocumentMoniker": "CursorControl.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\CursorControl.h",
+              "RelativeToolTip": "CursorControl.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-06T11:09:54.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:33:44.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Monster.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.cpp",
+              "RelativeDocumentMoniker": "Monster.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Monster.cpp",
+              "RelativeToolTip": "Monster.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:33:43.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StoreScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
+              "RelativeDocumentMoniker": "StoreScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\StoreScene.cpp",
+              "RelativeToolTip": "StoreScene.cpp",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAuwKMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T11:10:33.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LobbyScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
+              "RelativeDocumentMoniker": "LobbyScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\LobbyScene.cpp",
+              "RelativeToolTip": "LobbyScene.cpp",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T11:10:32.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TitleScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.cpp",
+              "RelativeDocumentMoniker": "TitleScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\TitleScene.cpp",
+              "RelativeToolTip": "TitleScene.cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAuwG0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T11:10:31.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UIDesign.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.cpp",
+              "RelativeDocumentMoniker": "UIDesign.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\UIDesign.cpp",
+              "RelativeToolTip": "UIDesign.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T11:09:56.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Game.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\Game.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\Game.cpp",
               "RelativeToolTip": "Game.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -182,11 +419,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\main.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\main.cpp",
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -194,11 +431,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "BattleScene.h",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.h",
               "RelativeDocumentMoniker": "BattleScene.h",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.h",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.h",
               "RelativeToolTip": "BattleScene.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -206,16 +443,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BattleScene.cpp",
-              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
-              "RelativeDocumentMoniker": "BattleScene.cpp",
-              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
-              "RelativeToolTip": "BattleScene.cpp",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHgAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "InventoryScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
+              "RelativeDocumentMoniker": "InventoryScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\InventoryScene.cpp",
+              "RelativeToolTip": "InventoryScene.cpp",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwKgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-02T07:24:21.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T11:17:00.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DungeonScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
+              "RelativeDocumentMoniker": "DungeonScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\DungeonScene.cpp",
+              "RelativeToolTip": "DungeonScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T02:26:55.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BattleScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
+              "RelativeDocumentMoniker": "BattleScene.cpp",
+              "ToolTip": "C:\\Users\\ehdtk\\Desktop\\Fork\\ConsoleProject\\ConsoleProject\\BattleScene.cpp",
+              "RelativeToolTip": "BattleScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-02T07:24:21.332Z"
             }
           ]
         }

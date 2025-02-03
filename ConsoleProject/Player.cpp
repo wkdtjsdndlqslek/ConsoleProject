@@ -4,12 +4,12 @@
 #include "InventoryScene.h"
 #include "UIDesign.h"
 
-Player::Player():Unit("«√∑π¿ÃæÓ", 1000, 20, 10000)
+Player::Player() :Unit("ÌîåÎ†àÏù¥Ïñ¥", 1000, 20, 10000)
 {
-	std::cout << "«√∑π¿ÃæÓ ¿Ã∏ß¿ª ¿‘∑¬«œººø‰. : ";
-	string playerName;
-	cin >> playerName;
-	name = playerName;
+    std::cout << "ÌîåÎ†àÏù¥Ïñ¥ Ïù¥Î¶ÑÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî. : ";
+    string playerName;
+    cin >> playerName;
+    name = playerName;
 }
 
 Player::~Player()
@@ -18,35 +18,32 @@ Player::~Player()
 
 void Player::EarnMoney(int money)
 {
-	Money += money;
+    Money += money;
 }
-
 
 void Player::EquippedItem(Item& item)
 {
-	equippedItems.push_back(item);
-	Att+=item.GetItemAtt();
+    equippedItems.push_back(item);
+    Att += item.GetItemAtt();
 }
 
 void Player::UnEquippedItem(Item& item)
 {
-	equippedItems.pop_back();
-	Att -= item.GetItemAtt();
+    equippedItems.pop_back();
+    Att -= item.GetItemAtt();
 }
 
 void Player::displayEquippedItems(const std::vector<Item>& equippedItems)
-	{
-		for (auto& item : equippedItems)
-		{
-			int i = 1;
-			std::cout << i++ << ". ";
-			std::cout << item.GetItemName() << " ∞¯∞›∑¬ : " << item.GetItemAtt() << std::endl;
-		}
-	}
+{
+    for (auto& item : equippedItems)
+    {
+        int i = 1;
+        std::cout << i++ << ". ";
+        std::cout << item.GetItemName() << " Í≥µÍ≤©Î†• : " << item.GetItemAtt() << std::endl;
+    }
+}
 
 void Player::checkEquippedItem(Player* player, InventoryScene* inventory, Item& item)
 {
-	inventory->UnEquippedDisplayItem(player, item);
+    inventory->UnEquippedDisplayItem(player, item);
 }
-
-

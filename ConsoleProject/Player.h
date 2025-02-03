@@ -1,8 +1,8 @@
 #pragma once
-#include"Unit.h"
-#include<iostream>
-#include<vector>
-#include"Item.h"
+#include "Unit.h"
+#include <iostream>
+#include <vector>
+#include "Item.h"
 using namespace std;
 
 class InventoryScene;
@@ -10,15 +10,14 @@ class InventoryScene;
 class Player :public Unit
 {
 private:
-	std::vector<Item> equippedItems;
+    std::vector<Item> equippedItems;
 public:
-	Player();
-	~Player();
+    Player();
+    ~Player();
 public:
-	void EarnMoney(int m);
-	void EquippedItem(Item& item);//¾ÆÀÌÅÆ ÀåÂø ÈÄ ÇÃ·¹ÀÌ¾î¿¡°Ô Àû¿ë
-	void UnEquippedItem(Item& item);//¾ÆÀÌÅÆ Å»Âø ÈÄ ÇÃ·¹ÀÌ¾î¿¡°Ô Àû¿ë
-	void checkEquippedItem(Player* player, InventoryScene* inventory, Item& item);
-	void displayEquippedItems(const std::vector<Item>& equippedItem);
+    void EarnMoney(int m);
+    void EquippedItem(Item& item);    //ì•„ì´í…œ ì¥ì°© ì‹œ í”Œë ˆì´ì–´ì˜ ë³€í™”
+    void UnEquippedItem(Item& item);  //ì•„ì´í…œ íƒˆì°© ì‹œ í”Œë ˆì´ì–´ì˜ ë³€í™”
+    void checkEquippedItem(Player* player, InventoryScene* inventory, Item& item);
+    void displayEquippedItems(const std::vector<Item>& equippedItem);
 };
-
